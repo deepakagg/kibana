@@ -76,6 +76,7 @@ export default function (kibana) {
       },
       styleSheetPaths: resolve(__dirname, 'public/index.scss'),
       links: [
+        /*
         {
           id: 'kibana:discover',
           title: i18n.translate('kbn.discoverTitle', {
@@ -96,6 +97,7 @@ export default function (kibana) {
           icon: 'plugins/kibana/assets/visualize.svg',
           euiIconType: 'visualizeApp',
         },
+        */
         {
           id: 'kibana:dashboard',
           title: i18n.translate('kbn.dashboardTitle', {
@@ -112,6 +114,7 @@ export default function (kibana) {
           icon: 'plugins/kibana/assets/dashboard.svg',
           euiIconType: 'dashboardApp',
         },
+        /*
         {
           id: 'kibana:dev_tools',
           title: i18n.translate('kbn.devToolsTitle', {
@@ -133,6 +136,7 @@ export default function (kibana) {
           euiIconType: 'managementApp',
           linkToLastSubUrl: false,
         },
+        */
       ],
 
       savedObjectsManagement: {
@@ -261,9 +265,9 @@ export default function (kibana) {
           save: true,
         },
         dashboard: {
-          createNew: true,
+          createNew: false,
           show: true,
-          showWriteControls: true,
+          showWriteControls: false,
         },
         catalogue: {
           discover: true,
