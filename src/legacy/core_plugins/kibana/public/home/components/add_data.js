@@ -200,6 +200,23 @@ const AddDataUi = ({ apmUiEnabled, isNewKibanaInstance, intl, mlEnabled }) => {
       <EuiFlexGroup>
         <EuiFlexItem>
           <EuiTitle>
+            <h3 style={{textAlign: 'center'}}>
+              <FormattedMessage
+                id="kbn.home.addData.addDataToKibanaTitle"
+                defaultMessage="Welcome!"
+              />
+            </h3>
+          </EuiTitle>
+        </EuiFlexItem>
+      </EuiFlexGroup>
+    </EuiPanel>
+  );
+
+  return (
+    <EuiPanel paddingSize="l">
+      <EuiFlexGroup>
+        <EuiFlexItem>
+          <EuiTitle>
             <h3>
               <FormattedMessage
                 id="kbn.home.addData.addDataToKibanaTitle"

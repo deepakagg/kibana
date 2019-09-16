@@ -143,6 +143,8 @@ export class Home extends Component {
 
           <EuiSpacer size="l" />
 
+          {
+            /*
           <EuiFlexGroup>
             <EuiFlexItem>
               <EuiPanel paddingSize="l">
@@ -199,7 +201,9 @@ export class Home extends Component {
               </EuiButton>
             </EuiFlexItem>
           </EuiFlexGroup>
-        </EuiPageBody>
+          */
+        }
+          </EuiPageBody>
       </EuiPage>
     );
   }
