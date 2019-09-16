@@ -84,7 +84,7 @@ export default function featureControlsTests({ getService }: KibanaFunctionalTes
         .post(`/api/shorten_url`)
         .auth(kibanaUsername, kibanaUserPassword)
         .set('kbn-xsrf', 'foo')
-        .send({ url: '/app/kibana#foo/bar/baz' })
+        .send({ url: '/app/nextsoftware#foo/bar/baz' })
         .then((resp: Record<string, any>) => {
           urlId = resp.body.urlId;
         });
@@ -107,7 +107,7 @@ export default function featureControlsTests({ getService }: KibanaFunctionalTes
           .then((resp: Record<string, any>) => {
             if (feature.canAccess) {
               expect(resp.status).to.eql(302);
-              expect(resp.headers.location).to.eql('/app/kibana#foo/bar/baz');
+              expect(resp.headers.location).to.eql('/app/nextsoftware#foo/bar/baz');
             } else {
               expect(resp.status).to.eql(500);
               expect(resp.headers.location).to.eql(undefined);

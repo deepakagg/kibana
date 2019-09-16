@@ -10388,7 +10388,7 @@
     "xpack.spaces.management.spaceIdentifier.customizeSpaceLinkText": "[カスタマイズ]",
     "xpack.spaces.management.spaceIdentifier.customizeSpaceNameLinkLabel": "URL 識別子をカスタマイズ",
     "xpack.spaces.management.spaceIdentifier.emptySpaceIdentifierText": "awesome-space",
-    "xpack.spaces.management.spaceIdentifier.kibanaURLForSpaceIdentifierDescription": "例: https://my-kibana.example{spaceIdentifier}/app/kibana.",
+    "xpack.spaces.management.spaceIdentifier.kibanaURLForSpaceIdentifierDescription": "例: https://my-kibana.example{spaceIdentifier}/app/nextsoftware.",
     "xpack.spaces.management.spaceIdentifier.resetSpaceNameLinkLabel": "URL 識別子をリセット",
     "xpack.spaces.management.spaceIdentifier.resetSpaceNameLinkText": "[リセット]",
     "xpack.spaces.management.spaceIdentifier.urlIdentifierGeneratedFromSpaceNameTooltip": "awesome-space",

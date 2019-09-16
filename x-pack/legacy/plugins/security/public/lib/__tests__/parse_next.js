@@ -22,14 +22,14 @@ describe('parseNext', () => {
 
     it('should properly handle next without hash', () => {
       const basePath = '/iqf';
-      const next = `${basePath}/app/kibana`;
+      const next = `${basePath}/app/nextsoftware`;
       const href = `${basePath}/login?next=${next}`;
       expect(parseNext(href, basePath)).to.equal(next);
     });
 
     it('should properly handle next with hash', () => {
       const basePath = '/iqf';
-      const next = `${basePath}/app/kibana`;
+      const next = `${basePath}/app/nextsoftware`;
       const hash = '/discover/New-Saved-Search';
       const href = `${basePath}/login?next=${next}#${hash}`;
       expect(parseNext(href, basePath)).to.equal(`${next}#${hash}`);
@@ -46,7 +46,7 @@ describe('parseNext', () => {
     // to help prevent open redirect to a different url
     it('should return basePath if next includes a protocol/hostname', () => {
       const basePath = '/iqf';
-      const next = `https://example.com${basePath}/app/kibana`;
+      const next = `https://example.com${basePath}/app/nextsoftware`;
       const href = `${basePath}/login?next=${next}`;
       expect(parseNext(href, basePath)).to.equal(`${basePath}/`);
     });
@@ -64,7 +64,7 @@ describe('parseNext', () => {
     // to help prevent open redirect to a different port
     it('should return basePath if next includes a port', () => {
       const basePath = '/iqf';
-      const next = `http://localhost:5601${basePath}/app/kibana`;
+      const next = `http://localhost:5601${basePath}/app/nextsoftware`;
       const href = `${basePath}/login?next=${next}`;
       expect(parseNext(href, basePath)).to.equal(`${basePath}/`);
     });
@@ -82,7 +82,7 @@ describe('parseNext', () => {
     // to help prevent open redirect to a different base path
     it('should return basePath if next does not begin with basePath', () => {
       const basePath = '/iqf';
-      const next = '/notbasepath/app/kibana';
+      const next = '/notbasepath/app/nextsoftware';
       const href = `${basePath}/login?next=${next}`;
       expect(parseNext(href, basePath)).to.equal(`${basePath}/`);
     });
@@ -107,13 +107,13 @@ describe('parseNext', () => {
     });
 
     it('should properly handle next without hash', () => {
-      const next = '/app/kibana';
+      const next = '/app/nextsoftware';
       const href = `/login?next=${next}`;
       expect(parseNext(href)).to.equal(next);
     });
 
     it('should properly handle next with hash', () => {
-      const next = '/app/kibana';
+      const next = '/app/nextsoftware';
       const hash = '/discover/New-Saved-Search';
       const href = `/login?next=${next}#${hash}`;
       expect(parseNext(href)).to.equal(`${next}#${hash}`);
@@ -128,7 +128,7 @@ describe('parseNext', () => {
 
     // to help prevent open redirect to a different url
     it('should return / if next includes a protocol/hostname', () => {
-      const next = 'https://example.com/app/kibana';
+      const next = 'https://example.com/app/nextsoftware';
       const href = `/login?next=${next}`;
       expect(parseNext(href)).to.equal('/');
     });
@@ -144,7 +144,7 @@ describe('parseNext', () => {
 
     // to help prevent open redirect to a different port
     it('should return / if next includes a port', () => {
-      const next = 'http://localhost:5601/app/kibana';
+      const next = 'http://localhost:5601/app/nextsoftware';
       const href = `/login?next=${next}`;
       expect(parseNext(href)).to.equal('/');
     });

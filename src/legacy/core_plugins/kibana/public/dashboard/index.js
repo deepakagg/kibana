@@ -197,7 +197,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Display and share a collection of visualizations and saved searches.',
     }),
     icon: 'dashboardApp',
-    path: `/app/kibana#${DashboardConstants.LANDING_PAGE_PATH}`,
+    path: `/app/nextsoftware#${DashboardConstants.LANDING_PAGE_PATH}`,
     showOnHomePage: true,
     category: FeatureCatalogueCategory.DATA
   };

@@ -158,7 +158,7 @@ exports[`EmptyState component does not render empty state with appropriate base 
                           Object {
                             "configureHeartbeatLink": <EuiLink
                               color="primary"
-                              href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                              href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                               target="_blank"
                               type="button"
                             >
@@ -253,7 +253,7 @@ exports[`EmptyState component does not render empty state with appropriate base 
                                   Object {
                                     "configureHeartbeatLink": <EuiLink
                                       color="primary"
-                                      href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                                      href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                                       target="_blank"
                                       type="button"
                                     >
@@ -268,13 +268,13 @@ exports[`EmptyState component does not render empty state with appropriate base 
                               >
                                 <EuiLink
                                   color="primary"
-                                  href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                                  href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                                   target="_blank"
                                   type="button"
                                 >
                                   <a
                                     className="euiLink euiLink--primary"
-                                    href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                                    href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                   >
@@ -634,7 +634,7 @@ exports[`EmptyState component notifies when index does not exist 1`] = `
                           Object {
                             "configureHeartbeatLink": <EuiLink
                               color="primary"
-                              href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                              href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                               target="_blank"
                               type="button"
                             >
@@ -729,7 +729,7 @@ exports[`EmptyState component notifies when index does not exist 1`] = `
                                   Object {
                                     "configureHeartbeatLink": <EuiLink
                                       color="primary"
-                                      href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                                      href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                                       target="_blank"
                                       type="button"
                                     >
@@ -744,13 +744,13 @@ exports[`EmptyState component notifies when index does not exist 1`] = `
                               >
                                 <EuiLink
                                   color="primary"
-                                  href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                                  href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                                   target="_blank"
                                   type="button"
                                 >
                                   <a
                                     className="euiLink euiLink--primary"
-                                    href="foo/app/kibana#/home/tutorial/uptimeMonitors"
+                                    href="foo/app/nextsoftware#/home/tutorial/uptimeMonitors"
                                     rel="noopener noreferrer"
                                     target="_blank"
                                   >

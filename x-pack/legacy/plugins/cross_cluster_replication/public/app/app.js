@@ -127,7 +127,7 @@ export class App extends Component {
           {' '}
           <a
             data-test-subj="manageLicenseLink"
-            href={chrome.addBasePath('/app/kibana#/management/elasticsearch/license_management/home')}
+            href={chrome.addBasePath('/app/nextsoftware#/management/elasticsearch/license_management/home')}
           >
             <FormattedMessage
               id="xpack.crossClusterReplication.app.licenseErrorLinkText"

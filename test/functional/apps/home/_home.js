@@ -32,13 +32,13 @@ export default function ({ getService, getPageObjects }) {
       await PageObjects.common.navigateToApp('settings');
       await globalNav.clickLogo();
       const url = await browser.getCurrentUrl();
-      expect(url.includes('/app/kibana#/home')).to.be(true);
+      expect(url.includes('/app/nextsoftware#/home')).to.be(true);
     });
 
     it('clicking on console on homepage should take you to console app', async ()=> {
       await PageObjects.home.clickSynopsis('console');
       const url = await browser.getCurrentUrl();
-      expect(url.includes('/app/kibana#/dev_tools/console')).to.be(true);
+      expect(url.includes('/app/nextsoftware#/dev_tools/console')).to.be(true);
     });
 
   });

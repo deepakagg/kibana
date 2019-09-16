@@ -49,32 +49,32 @@ describe('unhashUrl', () => {
     });
 
     it('if just a path', () => {
-      const url = 'https://localhost:5601/app/kibana';
+      const url = 'https://localhost:5601/app/nextsoftware';
       expect(unhashUrl(url, unhashableStates)).to.be(url);
     });
 
     it('if just a path and query', () => {
-      const url = 'https://localhost:5601/app/kibana?foo=bar';
+      const url = 'https://localhost:5601/app/nextsoftware?foo=bar';
       expect(unhashUrl(url, unhashableStates)).to.be(url);
     });
 
     it('if empty hash with query', () => {
-      const url = 'https://localhost:5601/app/kibana?foo=bar#';
+      const url = 'https://localhost:5601/app/nextsoftware?foo=bar#';
       expect(unhashUrl(url, unhashableStates)).to.be(url);
     });
 
     it('if empty hash without query', () => {
-      const url = 'https://localhost:5601/app/kibana#';
+      const url = 'https://localhost:5601/app/nextsoftware#';
       expect(unhashUrl(url, unhashableStates)).to.be(url);
     });
 
     it('if hash is just a path', () => {
-      const url = 'https://localhost:5601/app/kibana#/discover';
+      const url = 'https://localhost:5601/app/nextsoftware#/discover';
       expect(unhashUrl(url, unhashableStates)).to.be(url);
     });
 
     it('if hash does not have matching query string vals', () => {
-      const url = 'https://localhost:5601/app/kibana#/discover?foo=bar';
+      const url = 'https://localhost:5601/app/nextsoftware#/discover?foo=bar';
       expect(unhashUrl(url, unhashableStates)).to.be(url);
     });
   });

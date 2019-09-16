@@ -67,7 +67,7 @@ describe('DashboardOnlyModeRequestInterceptor', () => {
       it('lets the route render as normal', async () => {
         const { server } = setup();
         const response = await server.inject({
-          url: '/app/kibana',
+          url: '/app/nextsoftware',
           credentials: {
             roles: ['foo', 'bar']
           }
@@ -123,7 +123,7 @@ describe('DashboardOnlyModeRequestInterceptor', () => {
         it('renders the dashboardViewerApp instead', async () => {
           const { server } = setup();
           const response = await server.inject({
-            url: '/app/kibana',
+            url: '/app/nextsoftware',
             credentials: {
               roles: [DASHBOARD_ONLY_MODE_ROLE]
             }
@@ -139,9 +139,9 @@ describe('DashboardOnlyModeRequestInterceptor', () => {
       });
     }
 
-    testRendersDashboardViewerApp('/app/kibana');
-    testRendersDashboardViewerApp('/app/kibana#/foo/bar');
-    testRendersDashboardViewerApp('/app/kibana/foo/bar');
-    testRendersDashboardViewerApp('/app/kibana?foo=bar');
+    testRendersDashboardViewerApp('/app/nextsoftware');
+    testRendersDashboardViewerApp('/app/nextsoftware#/foo/bar');
+    testRendersDashboardViewerApp('/app/nextsoftware/foo/bar');
+    testRendersDashboardViewerApp('/app/nextsoftware?foo=bar');
   });
 });

@@ -19,5 +19,5 @@ test('KibanaLink produces the correct URL', async () => {
     search: '?rangeFrom=now-5h&rangeTo=now-2h'
   } as Location);
 
-  expect(href).toMatchInlineSnapshot(`"/basepath/app/kibana#/some/path"`);
+  expect(href).toMatchInlineSnapshot(`"/basepath/app/nextsoftware#/some/path"`);
 });

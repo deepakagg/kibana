@@ -10389,7 +10389,7 @@
     "xpack.spaces.management.spaceIdentifier.customizeSpaceLinkText": "[定制]",
     "xpack.spaces.management.spaceIdentifier.customizeSpaceNameLinkLabel": "定制 URL 标识符",
     "xpack.spaces.management.spaceIdentifier.emptySpaceIdentifierText": "awesome-space",
-    "xpack.spaces.management.spaceIdentifier.kibanaURLForSpaceIdentifierDescription": "示例：https://my-kibana.example{spaceIdentifier}/app/kibana。",
+    "xpack.spaces.management.spaceIdentifier.kibanaURLForSpaceIdentifierDescription": "示例：https://my-kibana.example{spaceIdentifier}/app/nextsoftware。",
     "xpack.spaces.management.spaceIdentifier.resetSpaceNameLinkLabel": "重置 URL 标识符",
     "xpack.spaces.management.spaceIdentifier.resetSpaceNameLinkText": "[重置]",
     "xpack.spaces.management.spaceIdentifier.urlIdentifierGeneratedFromSpaceNameTooltip": "awesome-space",

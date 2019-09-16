@@ -61,44 +61,44 @@ export default async function ({ readConfigFile }) {
 
     apps: {
       kibana: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
       },
       status_page: {
         pathname: '/status',
       },
       discover: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/discover',
       },
       context: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/context',
       },
       visualize: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/visualize',
       },
       dashboard: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/dashboards',
       },
       settings: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management',
       },
       timelion: {
         pathname: '/app/timelion',
       },
       console: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/dev_tools/console',
       },
       account: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/account',
       },
       home: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/home',
       },
     },

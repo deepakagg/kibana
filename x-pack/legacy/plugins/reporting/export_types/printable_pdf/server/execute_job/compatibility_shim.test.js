@@ -31,14 +31,14 @@ test(`it throw error if full URL is provided that is not a Kibana URL`, async ()
   const mockCreateJob = jest.fn();
   const compatibilityShim = compatibilityShimFactory(createMockServer());
 
-  await expect(compatibilityShim(mockCreateJob)({ query: '', objects: [ { url: 'https://localhost/app/kibana' } ] })).rejects.toBeDefined();
+  await expect(compatibilityShim(mockCreateJob)({ query: '', objects: [ { url: 'https://localhost/app/nextsoftware' } ] })).rejects.toBeDefined();
 });
 
 test(`it passes url through if it is a Kibana URL`, async () => {
   const mockCreateJob = jest.fn();
   const compatibilityShim = compatibilityShimFactory(createMockServer());
 
-  const url = 'http://localhost:5601/app/kibana/#visualize';
+  const url = 'http://localhost:5601/app/nextsoftware/#visualize';
   await compatibilityShim(mockCreateJob)({ objects: [ { url } ] });
   expect(mockCreateJob.mock.calls.length).toBe(1);
   expect(mockCreateJob.mock.calls[0][0].objects[0].url).toBe(url);
@@ -51,47 +51,47 @@ test(`it generates the absolute url if a urlHash is provided`, async () => {
   const urlHash = '#visualize';
   await compatibilityShim(mockCreateJob)({ objects: [ { urlHash } ] });
   expect(mockCreateJob.mock.calls.length).toBe(1);
-  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/app/kibana#visualize');
+  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/app/nextsoftware#visualize');
 });
 
 test(`it generates the absolute url using server's basePath if a relativeUrl is provided`, async () => {
   const mockCreateJob = jest.fn();
   const compatibilityShim = compatibilityShimFactory(createMockServer());
 
-  const relativeUrl = '/app/kibana#/visualize?';
+  const relativeUrl = '/app/nextsoftware#/visualize?';
   await compatibilityShim(mockCreateJob)({ objects: [ { relativeUrl } ] });
   expect(mockCreateJob.mock.calls.length).toBe(1);
-  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/app/kibana#/visualize?');
+  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/app/nextsoftware#/visualize?');
 });
 
 test(`it generates the absolute url using job's basePath if a relativeUrl is provided`, async () => {
   const mockCreateJob = jest.fn();
   const compatibilityShim = compatibilityShimFactory(createMockServer());
 
-  const relativeUrl = '/app/kibana#/visualize?';
+  const relativeUrl = '/app/nextsoftware#/visualize?';
   await compatibilityShim(mockCreateJob)({ basePath: '/s/marketing', objects: [ { relativeUrl } ] });
   expect(mockCreateJob.mock.calls.length).toBe(1);
-  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/s/marketing/app/kibana#/visualize?');
+  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/s/marketing/app/nextsoftware#/visualize?');
 });
 
 test(`it generates the absolute url using server's basePath if a relativeUrl with querystring is provided`, async () => {
   const mockCreateJob = jest.fn();
   const compatibilityShim = compatibilityShimFactory(createMockServer());
 
-  const relativeUrl = '/app/kibana?_t=123456789#/visualize?_g=()';
+  const relativeUrl = '/app/nextsoftware?_t=123456789#/visualize?_g=()';
   await compatibilityShim(mockCreateJob)({ objects: [ { relativeUrl } ] });
   expect(mockCreateJob.mock.calls.length).toBe(1);
-  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/app/kibana?_t=123456789#/visualize?_g=()');
+  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/app/nextsoftware?_t=123456789#/visualize?_g=()');
 });
 
 test(`it generates the absolute url using job's basePath if a relativeUrl with querystring is provided`, async () => {
   const mockCreateJob = jest.fn();
   const compatibilityShim = compatibilityShimFactory(createMockServer());
 
-  const relativeUrl = '/app/kibana?_t=123456789#/visualize?_g=()';
+  const relativeUrl = '/app/nextsoftware?_t=123456789#/visualize?_g=()';
   await compatibilityShim(mockCreateJob)({ basePath: '/s/marketing', objects: [ { relativeUrl } ] });
   expect(mockCreateJob.mock.calls.length).toBe(1);
-  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/s/marketing/app/kibana?_t=123456789#/visualize?_g=()');
+  expect(mockCreateJob.mock.calls[0][0].urls[0]).toBe('http://localhost:5601/s/marketing/app/nextsoftware?_t=123456789#/visualize?_g=()');
 });
 
 test(`it passes the provided browserTimezone through`, async () => {

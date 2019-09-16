@@ -40,14 +40,14 @@ test(`adds forceNow to hash's query, if it exists`, async () => {
         isImmediate: false,
         savedObjectType: 'search',
       },
-      relativeUrl: '/app/kibana#/something',
+      relativeUrl: '/app/nextsoftware#/something',
       forceNow,
     },
     server: mockServer,
   });
 
   expect(urls[0]).toEqual(
-    'http://localhost:5601/sbp/app/kibana#/something?forceNow=2000-01-01T00%3A00%3A00.000Z'
+    'http://localhost:5601/sbp/app/nextsoftware#/something?forceNow=2000-01-01T00%3A00%3A00.000Z'
   );
 });
 
@@ -63,14 +63,14 @@ test(`appends forceNow to hash's query, if it exists`, async () => {
         isImmediate: false,
         savedObjectType: 'search',
       },
-      relativeUrl: '/app/kibana#/something?_g=something',
+      relativeUrl: '/app/nextsoftware#/something?_g=something',
       forceNow,
     },
     server: mockServer,
   });
 
   expect(urls[0]).toEqual(
-    'http://localhost:5601/sbp/app/kibana#/something?_g=something&forceNow=2000-01-01T00%3A00%3A00.000Z'
+    'http://localhost:5601/sbp/app/nextsoftware#/something?_g=something&forceNow=2000-01-01T00%3A00%3A00.000Z'
   );
 });
 
@@ -84,10 +84,10 @@ test(`doesn't append forceNow query to url, if it doesn't exists`, async () => {
         isImmediate: false,
         savedObjectType: 'search',
       },
-      relativeUrl: '/app/kibana#/something',
+      relativeUrl: '/app/nextsoftware#/something',
     },
     server: mockServer,
   });
 
-  expect(urls[0]).toEqual('http://localhost:5601/sbp/app/kibana#/something');
+  expect(urls[0]).toEqual('http://localhost:5601/sbp/app/nextsoftware#/something');
 });

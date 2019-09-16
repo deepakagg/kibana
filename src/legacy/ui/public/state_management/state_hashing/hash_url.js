@@ -73,7 +73,7 @@ export const hashUrl = (states, redirectUrl) => {
   // is the entire URL, and the parsedAppUrl is everything after the hash.
   //
   // EXAMPLE
-  // parsedUrl: /app/kibana#/visualize/edit/somelongguid?g=()&a=()
+  // parsedUrl: /app/nextsoftware#/visualize/edit/somelongguid?g=()&a=()
   // parsedAppUrl: /visualize/edit/somelongguid?g=()&a=()
   const parsedAppUrl = parseUrl(parsedUrl.hash.slice(1), true);
 

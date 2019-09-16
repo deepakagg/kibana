@@ -53,7 +53,7 @@ export function ServiceOverview() {
 
             <EuiLink
               href={url.format({
-                pathname: chrome.addBasePath('/app/kibana'),
+                pathname: chrome.addBasePath('/app/nextsoftware'),
                 hash: '/management/elasticsearch/upgrade_assistant'
               })}
             >

@@ -20,7 +20,7 @@ import { i18n } from '@kbn/i18n';
 // the standard kibana plugin.  We don't want to include code for the other links (visualize, dev tools, etc)
 // since it's view only, but we want the urls to be the same, so we are using largely the same setup.
 export function dashboardMode(kibana) {
-  const kbnBaseUrl = '/app/kibana';
+  const kbnBaseUrl = '/app/nextsoftware';
   return new kibana.Plugin({
     id: 'dashboard_mode',
     publicDir: resolve(__dirname, 'public'),

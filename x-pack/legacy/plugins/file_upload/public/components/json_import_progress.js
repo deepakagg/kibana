@@ -113,7 +113,7 @@ export class JsonImportProgress extends Component {
                 })}
                 <a
                   target="_blank"
-                  href={`${chrome.getBasePath()}/app/kibana#/
+                  href={`${chrome.getBasePath()}/app/nextsoftware#/
                       management/elasticsearch/index_management/indices/
                       filter/${indexName}`.replace(/\s/g, '')}
                 >

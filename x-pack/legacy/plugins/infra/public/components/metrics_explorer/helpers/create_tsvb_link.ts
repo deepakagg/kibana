@@ -132,7 +132,7 @@ export const createTSVBLink = (
     time: { from: timeRange.from, to: timeRange.to },
   };
 
-  return `../app/kibana#/visualize/create?type=metrics&_g=${encode(globalState)}&_a=${encode(
+  return `../app/nextsoftware#/visualize/create?type=metrics&_g=${encode(globalState)}&_a=${encode(
     appState as any
   )}`;
 };

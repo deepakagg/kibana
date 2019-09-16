@@ -79,14 +79,14 @@ export function selectTestSuiteFactory(esArchiver: any, supertest: SuperTest<any
       expectDefaultSpaceResponse(resp);
     } else {
       expect(resp.body).to.eql({
-        location: `/s/${spaceId}/app/kibana`,
+        location: `/s/${spaceId}/app/nextsoftware`,
       });
     }
   };
 
   const expectDefaultSpaceResponse = (resp: { [key: string]: any }) => {
     expect(resp.body).to.eql({
-      location: `/app/kibana`,
+      location: `/app/nextsoftware`,
     });
   };
 

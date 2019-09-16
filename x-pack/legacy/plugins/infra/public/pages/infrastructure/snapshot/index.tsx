@@ -103,7 +103,7 @@ export const SnapshotPage = injectUICapabilities(
                   <EuiFlexGroup>
                     <EuiFlexItem>
                       <EuiButton
-                        href={`${basePath}/app/kibana#/home/tutorial_directory/metrics`}
+                        href={`${basePath}/app/nextsoftware#/home/tutorial_directory/metrics`}
                         color="primary"
                         fill
                         data-test-subj="infrastructureViewSetupInstructionsButton"

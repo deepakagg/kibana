@@ -45,7 +45,7 @@ import { i18n } from '@kbn/i18n';
 const mkdirp = Promise.promisify(mkdirpNode);
 
 export default function (kibana) {
-  const kbnBaseUrl = '/app/kibana';
+  const kbnBaseUrl = '/app/nextsoftware';
   return new kibana.Plugin({
     id: 'kibana',
     config: function (Joi) {
@@ -121,7 +121,7 @@ export default function (kibana) {
             defaultMessage: 'Dev Tools',
           }),
           order: 9001,
-          url: '/app/kibana#/dev_tools',
+          url: '/app/nextsoftware#/dev_tools',
           icon: 'plugins/kibana/assets/wrench.svg',
           euiIconType: 'devToolsApp',
         },
@@ -152,7 +152,7 @@ export default function (kibana) {
           },
           getInAppUrl(obj) {
             return {
-              path: `/app/kibana#/management/kibana/index_patterns/${encodeURIComponent(obj.id)}`,
+              path: `/app/nextsoftware#/management/kibana/index_patterns/${encodeURIComponent(obj.id)}`,
               uiCapabilitiesPath: 'management.kibana.index_patterns',
             };
           },
@@ -169,7 +169,7 @@ export default function (kibana) {
           },
           getInAppUrl(obj) {
             return {
-              path: `/app/kibana#/visualize/edit/${encodeURIComponent(obj.id)}`,
+              path: `/app/nextsoftware#/visualize/edit/${encodeURIComponent(obj.id)}`,
               uiCapabilitiesPath: 'visualize.show',
             };
           },
@@ -186,7 +186,7 @@ export default function (kibana) {
           },
           getInAppUrl(obj) {
             return {
-              path: `/app/kibana#/discover/${encodeURIComponent(obj.id)}`,
+              path: `/app/nextsoftware#/discover/${encodeURIComponent(obj.id)}`,
               uiCapabilitiesPath: 'discover.show',
             };
           },
@@ -203,7 +203,7 @@ export default function (kibana) {
           },
           getInAppUrl(obj) {
             return {
-              path: `/app/kibana#/dashboard/${encodeURIComponent(obj.id)}`,
+              path: `/app/nextsoftware#/dashboard/${encodeURIComponent(obj.id)}`,
               uiCapabilitiesPath: 'dashboard.show',
             };
           },
@@ -219,7 +219,7 @@ export default function (kibana) {
           isImportableAndExportable: true,
           getInAppUrl() {
             return {
-              path: `/app/kibana#/management/kibana/settings`,
+              path: `/app/nextsoftware#/management/kibana/settings`,
               uiCapabilitiesPath: 'advancedSettings.show',
             };
           },

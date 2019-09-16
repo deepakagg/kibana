@@ -51,7 +51,7 @@ export function createDashboardModeRequestInterceptor(dashboardViewerApp) {
 
       const enforceDashboardOnlyMode = isDashboardOnlyModeUser && !isSuperUser;
       if (enforceDashboardOnlyMode) {
-        if (url.path.startsWith('/app/kibana')) {
+        if (url.path.startsWith('/app/nextsoftware')) {
           // If the user is in "Dashboard only mode" they should only be allowed to see
           // that app and none others.  Here we are intercepting all other routing and ensuring the viewer
           // app is the only one ever rendered.

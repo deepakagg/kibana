@@ -241,7 +241,7 @@ export default async function ({ readConfigFile }) {
         pathname: '/app/monitoring',
       },
       logstashPipelines: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/logstash/pipelines',
       },
       maps: {
@@ -251,11 +251,11 @@ export default async function ({ readConfigFile }) {
         pathname: '/app/graph',
       },
       grokDebugger: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/dev_tools/grokdebugger',
       },
       searchProfiler: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/dev_tools/searchprofiler',
       },
       spaceSelector: {
@@ -290,38 +290,38 @@ export default async function ({ readConfigFile }) {
         pathname: '/app/ml'
       },
       rollupJob: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/rollup_jobs/',
       },
       licenseManagement: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/license_management',
       },
       indexManagement: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/index_management',
       },
       indexLifecycleManagement: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/index_lifecycle_management',
       },
       snapshotRestore: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/snapshot_restore',
       },
       crossClusterReplication: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/cross_cluster_replication',
       },
       remoteClusters: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/remote_clusters',
       },
       apm: {
         pathname: '/app/apm',
       },
       watcher: {
-        pathname: '/app/kibana',
+        pathname: '/app/nextsoftware',
         hash: '/management/elasticsearch/watcher/watches/',
       },
     },

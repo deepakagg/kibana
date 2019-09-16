@@ -47,7 +47,7 @@ export const EmptyIndex = ({ basePath }: EmptyIndexProps) => (
                     configureHeartbeatLink: (
                       <EuiLink
                         target="_blank"
-                        href={`${basePath}/app/kibana#/home/tutorial/uptimeMonitors`}
+                        href={`${basePath}/app/nextsoftware#/home/tutorial/uptimeMonitors`}
                       >
                         <FormattedMessage
                           id="xpack.uptime.emptyState.configureHeartbeatLinkText"

@@ -55,7 +55,7 @@ describe('SpacesService', () => {
       const spacesServiceSetup = await createService();
 
       const request: KibanaRequest = {
-        url: { path: '/app/kibana' },
+        url: { path: '/app/nextsoftware' },
       } as KibanaRequest;
 
       expect(spacesServiceSetup.getSpaceId(request)).toEqual(DEFAULT_SPACE_ID);
@@ -65,7 +65,7 @@ describe('SpacesService', () => {
       const spacesServiceSetup = await createService();
 
       const request: KibanaRequest = {
-        url: { path: '/s/foo/app/kibana' },
+        url: { path: '/s/foo/app/nextsoftware' },
       } as KibanaRequest;
 
       expect(spacesServiceSetup.getSpaceId(request)).toEqual('foo');
@@ -77,7 +77,7 @@ describe('SpacesService', () => {
       const spacesServiceSetup = await createService();
 
       const request: KibanaRequest = {
-        url: { path: '/app/kibana' },
+        url: { path: '/app/nextsoftware' },
       } as KibanaRequest;
 
       expect(spacesServiceSetup.isInDefaultSpace(request)).toEqual(true);
@@ -87,7 +87,7 @@ describe('SpacesService', () => {
       const spacesServiceSetup = await createService();
 
       const request: KibanaRequest = {
-        url: { path: '/s/foo/app/kibana' },
+        url: { path: '/s/foo/app/nextsoftware' },
       } as KibanaRequest;
 
       expect(spacesServiceSetup.isInDefaultSpace(request)).toEqual(false);

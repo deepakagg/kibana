@@ -73,14 +73,14 @@ export default function ({ getService, getPageObjects }) {
     });
 
     it('encodes portions of the URL as necessary', async () => {
-      await browser.get('http://localhost:5620/app/kibana#/home', false);
+      await browser.get('http://localhost:5620/app/nextsoftware#/home', false);
       await retry.waitFor('navigation to home app', async () => (
-        (await browser.getCurrentUrl()) === 'http://localhost:5620/app/kibana#/home?_g=()'
+        (await browser.getCurrentUrl()) === 'http://localhost:5620/app/nextsoftware#/home?_g=()'
       ));
 
-      await browser.get('http://localhost:5620/app/kibana#/home?_g=()&a=b/c', false);
+      await browser.get('http://localhost:5620/app/nextsoftware#/home?_g=()&a=b/c', false);
       await retry.waitFor('hash to be properly encoded', async () => (
-        (await browser.getCurrentUrl()) === 'http://localhost:5620/app/kibana#/home?_g=()&a=b%2Fc'
+        (await browser.getCurrentUrl()) === 'http://localhost:5620/app/nextsoftware#/home?_g=()&a=b%2Fc'
       ));
     });
   });

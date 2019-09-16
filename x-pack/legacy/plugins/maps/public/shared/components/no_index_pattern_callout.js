@@ -26,7 +26,7 @@ export function NoIndexPatternCallout() {
           id="xpack.maps.noIndexPattern.doThisPrefixDescription"
           defaultMessage="You'll need to "
         />
-        <EuiLink href={chrome.addBasePath('/app/kibana#/management/kibana/index_pattern')}>
+        <EuiLink href={chrome.addBasePath('/app/nextsoftware#/management/kibana/index_pattern')}>
           <FormattedMessage
             id="xpack.maps.noIndexPattern.doThisLinkTextDescription"
             defaultMessage="create an index pattern"
@@ -42,7 +42,7 @@ export function NoIndexPatternCallout() {
           id="xpack.maps.noIndexPattern.hintDescription"
           defaultMessage="Don't have any geospatial data sets? "
         />
-        <EuiLink href={chrome.addBasePath('/app/kibana#/home/tutorial_directory/sampleData')}>
+        <EuiLink href={chrome.addBasePath('/app/nextsoftware#/home/tutorial_directory/sampleData')}>
           <FormattedMessage
             id="xpack.maps.noIndexPattern.getStartedLinkText"
             defaultMessage="Get started with some sample data sets."

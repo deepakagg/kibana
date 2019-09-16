@@ -51,7 +51,7 @@ describe('onPostAuthRequestInterceptor', () => {
       },
       {
         method: 'GET',
-        path: '/app/kibana',
+        path: '/app/nextsoftware',
         handler: (req: any) => {
           return { path: req.path, basePath: http.basePath.get(req) };
         },
@@ -262,7 +262,7 @@ describe('onPostAuthRequestInterceptor', () => {
         },
       ];
 
-      const response = await request('/s/not-found/app/kibana', spaces);
+      const response = await request('/s/not-found/app/nextsoftware', spaces);
 
       expect(response.statusCode).toEqual(302);
       expect(response.headers.location).toEqual(serverBasePath);
@@ -281,7 +281,7 @@ describe('onPostAuthRequestInterceptor', () => {
       },
     ];
 
-    const response = await request('/s/a-space/app/kibana', spaces);
+    const response = await request('/s/a-space/app/nextsoftware', spaces);
 
     expect(response.statusCode).toEqual(200);
   }, 30000);
@@ -370,7 +370,7 @@ describe('onPostAuthRequestInterceptor', () => {
         },
       ];
 
-      const response = await request('/s/a-space/app/kibana', spaces);
+      const response = await request('/s/a-space/app/nextsoftware', spaces);
 
       expect(response.statusCode).toEqual(200);
 

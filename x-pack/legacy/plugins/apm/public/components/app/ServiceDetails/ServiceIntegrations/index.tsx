@@ -88,7 +88,7 @@ export class ServiceIntegrations extends React.Component<Props, State> {
         ),
         icon: 'watchesApp',
         href: chrome.addBasePath(
-          '/app/kibana#/management/elasticsearch/watcher'
+          '/app/nextsoftware#/management/elasticsearch/watcher'
         ),
         target: '_blank',
         onClick: () => this.closePopover()

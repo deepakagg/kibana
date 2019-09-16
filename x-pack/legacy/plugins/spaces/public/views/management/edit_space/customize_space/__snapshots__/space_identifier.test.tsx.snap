@@ -9,7 +9,7 @@ exports[`renders without crashing 1`] = `
     helpText={
       <p>
         <FormattedMessage
-          defaultMessage="Example: https://my-kibana.example{spaceIdentifier}/app/kibana."
+          defaultMessage="Example: https://my-kibana.example{spaceIdentifier}/app/nextsoftware."
           id="xpack.spaces.management.spaceIdentifier.kibanaURLForSpaceIdentifierDescription"
           values={
             Object {

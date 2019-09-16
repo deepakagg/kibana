@@ -122,7 +122,7 @@ class SpaceIdentifierUI extends Component<Props, State> {
       <p>
         <FormattedMessage
           id="xpack.spaces.management.spaceIdentifier.kibanaURLForSpaceIdentifierDescription"
-          defaultMessage="Example: https://my-kibana.example{spaceIdentifier}/app/kibana."
+          defaultMessage="Example: https://my-kibana.example{spaceIdentifier}/app/nextsoftware."
           values={{
             spaceIdentifier: <strong>/s/{identifier}</strong>,
           }}

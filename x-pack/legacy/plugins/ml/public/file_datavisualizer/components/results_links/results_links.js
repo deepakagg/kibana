@@ -105,7 +105,7 @@ export class ResultsLinks extends Component {
                 />
               }
               description=""
-              href={`${uiChrome.getBasePath()}/app/kibana#/discover?&_a=(index:'${indexPatternId}')${_g}`}
+              href={`${uiChrome.getBasePath()}/app/nextsoftware#/discover?&_a=(index:'${indexPatternId}')${_g}`}
             />
           </EuiFlexItem>
         }
@@ -152,7 +152,7 @@ export class ResultsLinks extends Component {
               />
             }
             description=""
-            href={`${uiChrome.getBasePath()}/app/kibana#/management/elasticsearch/index_management/indices/filter/${index}`}
+            href={`${uiChrome.getBasePath()}/app/nextsoftware#/management/elasticsearch/index_management/indices/filter/${index}`}
           />
         </EuiFlexItem>
 
@@ -167,7 +167,7 @@ export class ResultsLinks extends Component {
             }
             description=""
             href={
-              `${uiChrome.getBasePath()}/app/kibana#/management/kibana/index_patterns/${(
+              `${uiChrome.getBasePath()}/app/nextsoftware#/management/kibana/index_patterns/${(
                 createIndexPattern ? indexPatternId : '')}`
             }
           />

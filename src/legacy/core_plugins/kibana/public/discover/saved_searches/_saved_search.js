@@ -70,7 +70,7 @@ module.factory('SavedSearch', function (Private) {
   SavedSearch.searchSource = true;
 
   SavedSearch.prototype.getFullPath = function () {
-    return `/app/kibana#/discover/${this.id}`;
+    return `/app/nextsoftware#/discover/${this.id}`;
   };
 
   return SavedSearch;

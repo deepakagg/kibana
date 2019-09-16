@@ -67,7 +67,7 @@ const savedObjectsManagement = getManagementaMock({
     },
     getInAppUrl(obj) {
       return {
-        path: `/app/kibana#/management/kibana/index_patterns/${encodeURIComponent(obj.id)}`,
+        path: `/app/nextsoftware#/management/kibana/index_patterns/${encodeURIComponent(obj.id)}`,
         uiCapabilitiesPath: 'management.kibana.index_patterns',
       };
     },
@@ -83,7 +83,7 @@ const savedObjectsManagement = getManagementaMock({
     },
     getInAppUrl(obj) {
       return {
-        path: `/app/kibana#/visualize/edit/${encodeURIComponent(obj.id)}`,
+        path: `/app/nextsoftware#/visualize/edit/${encodeURIComponent(obj.id)}`,
         uiCapabilitiesPath: 'visualize.show',
       };
     },
@@ -99,7 +99,7 @@ const savedObjectsManagement = getManagementaMock({
     },
     getInAppUrl(obj) {
       return {
-        path: `/app/kibana#/discover/${encodeURIComponent(obj.id)}`,
+        path: `/app/nextsoftware#/discover/${encodeURIComponent(obj.id)}`,
         uiCapabilitiesPath: 'discover.show',
       };
     },
@@ -115,7 +115,7 @@ const savedObjectsManagement = getManagementaMock({
     },
     getInAppUrl(obj) {
       return {
-        path: `/app/kibana#/dashboard/${encodeURIComponent(obj.id)}`,
+        path: `/app/nextsoftware#/dashboard/${encodeURIComponent(obj.id)}`,
         uiCapabilitiesPath: 'dashboard.show',
       };
     },
@@ -194,7 +194,7 @@ describe('findRelationships', () => {
           title: 'Foo',
           editUrl: '/management/kibana/objects/savedVisualizations/1',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/1',
+            path: '/app/nextsoftware#/visualize/edit/1',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -208,7 +208,7 @@ describe('findRelationships', () => {
           title: 'Bar',
           editUrl: '/management/kibana/objects/savedVisualizations/2',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/2',
+            path: '/app/nextsoftware#/visualize/edit/2',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -222,7 +222,7 @@ describe('findRelationships', () => {
           title: 'FooBar',
           editUrl: '/management/kibana/objects/savedVisualizations/3',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/3',
+            path: '/app/nextsoftware#/visualize/edit/3',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -322,7 +322,7 @@ describe('findRelationships', () => {
           title: 'My Index Pattern',
           editUrl: '/management/kibana/index_patterns/1',
           inAppUrl: {
-            path: '/app/kibana#/management/kibana/index_patterns/1',
+            path: '/app/nextsoftware#/management/kibana/index_patterns/1',
             uiCapabilitiesPath: 'management.kibana.index_patterns',
           },
         },
@@ -337,7 +337,7 @@ describe('findRelationships', () => {
           title: 'My Dashboard',
           editUrl: '/management/kibana/objects/savedDashboards/1',
           inAppUrl: {
-            path: '/app/kibana#/dashboard/1',
+            path: '/app/nextsoftware#/dashboard/1',
             uiCapabilitiesPath: 'dashboard.show',
           },
         },
@@ -352,7 +352,7 @@ describe('findRelationships', () => {
           title: 'Your Dashboard',
           editUrl: '/management/kibana/objects/savedDashboards/2',
           inAppUrl: {
-            path: '/app/kibana#/dashboard/2',
+            path: '/app/nextsoftware#/dashboard/2',
             uiCapabilitiesPath: 'dashboard.show',
           },
         },
@@ -441,7 +441,7 @@ describe('findRelationships', () => {
           title: 'My Index Pattern',
           editUrl: '/management/kibana/index_patterns/1',
           inAppUrl: {
-            path: '/app/kibana#/management/kibana/index_patterns/1',
+            path: '/app/nextsoftware#/management/kibana/index_patterns/1',
             uiCapabilitiesPath: 'management.kibana.index_patterns',
           },
         },
@@ -456,7 +456,7 @@ describe('findRelationships', () => {
           title: 'Foo',
           editUrl: '/management/kibana/objects/savedVisualizations/1',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/1',
+            path: '/app/nextsoftware#/visualize/edit/1',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -471,7 +471,7 @@ describe('findRelationships', () => {
           title: 'Bar',
           editUrl: '/management/kibana/objects/savedVisualizations/2',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/2',
+            path: '/app/nextsoftware#/visualize/edit/2',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -486,7 +486,7 @@ describe('findRelationships', () => {
           title: 'FooBar',
           editUrl: '/management/kibana/objects/savedVisualizations/3',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/3',
+            path: '/app/nextsoftware#/visualize/edit/3',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -577,7 +577,7 @@ describe('findRelationships', () => {
           title: 'Foo',
           editUrl: '/management/kibana/objects/savedVisualizations/1',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/1',
+            path: '/app/nextsoftware#/visualize/edit/1',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -592,7 +592,7 @@ describe('findRelationships', () => {
           title: 'Bar',
           editUrl: '/management/kibana/objects/savedVisualizations/2',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/2',
+            path: '/app/nextsoftware#/visualize/edit/2',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -607,7 +607,7 @@ describe('findRelationships', () => {
           title: 'FooBar',
           editUrl: '/management/kibana/objects/savedVisualizations/3',
           inAppUrl: {
-            path: '/app/kibana#/visualize/edit/3',
+            path: '/app/nextsoftware#/visualize/edit/3',
             uiCapabilitiesPath: 'visualize.show',
           },
         },
@@ -622,7 +622,7 @@ describe('findRelationships', () => {
           title: 'My Saved Search',
           editUrl: '/management/kibana/objects/savedSearches/1',
           inAppUrl: {
-            path: '/app/kibana#/discover/1',
+            path: '/app/nextsoftware#/discover/1',
             uiCapabilitiesPath: 'discover.show',
           },
         },

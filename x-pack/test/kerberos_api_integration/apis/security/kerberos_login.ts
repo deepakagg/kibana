@@ -324,7 +324,7 @@ export default function({ getService }: KibanaFunctionalTestDefaultProviders) {
         // This request should succeed and automatically refresh token. Returned cookie will contain
         // the new access and refresh token pair.
         const nonAjaxResponse = await supertest
-          .get('/app/kibana')
+          .get('/app/nextsoftware')
           .set('Cookie', sessionCookie.cookieString())
           .expect(200);
 

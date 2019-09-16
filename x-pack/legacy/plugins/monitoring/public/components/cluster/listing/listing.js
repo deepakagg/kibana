@@ -308,7 +308,7 @@ const handleClickIncompatibleLicense = (scope, clusterName) => {
 };
 
 const handleClickInvalidLicense = (scope, clusterName) => {
-  const licensingPath = `${chrome.getBasePath()}/app/kibana#/management/elasticsearch/license_management/home`;
+  const licensingPath = `${chrome.getBasePath()}/app/nextsoftware#/management/elasticsearch/license_management/home`;
 
   licenseWarning(scope, {
     title: (

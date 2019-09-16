@@ -105,7 +105,7 @@ module.factory('SavedDashboard', function (Private) {
   SavedDashboard.searchsource = true;
 
   SavedDashboard.prototype.getFullPath = function () {
-    return `/app/kibana#${createDashboardEditUrl(this.id)}`;
+    return `/app/nextsoftware#${createDashboardEditUrl(this.id)}`;
   };
 
   SavedDashboard.prototype.getQuery = function () {

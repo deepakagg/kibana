@@ -17,7 +17,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Detect changes in your data by creating, managing, and monitoring alerts.'
     }),
     icon: 'watchesApp',
-    path: '/app/kibana#/management/elasticsearch/watcher/watches',
+    path: '/app/nextsoftware#/management/elasticsearch/watcher/watches',
     showOnHomePage: true,
     category: FeatureCatalogueCategory.ADMIN
   };

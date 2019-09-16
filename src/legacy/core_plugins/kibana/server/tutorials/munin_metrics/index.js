@@ -45,7 +45,7 @@ export function muninMetricsSpecProvider(server, context) {
         label: i18n.translate('kbn.server.tutorials.muninMetrics.artifacts.application.label', {
           defaultMessage: 'Discover',
         }),
-        path: '/app/kibana#/discover'
+        path: '/app/nextsoftware#/discover'
       },
       dashboards: [],
       exportedFields: {

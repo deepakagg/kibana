@@ -35,7 +35,7 @@ export function unhashUrl(urlWithHashes, states) {
 
   const urlWithHashesParsed = parseUrl(urlWithHashes, true);
   if (!urlWithHashesParsed.hostname) {
-    // passing a url like "localhost:5601" or "/app/kibana" should be prevented
+    // passing a url like "localhost:5601" or "/app/nextsoftware" should be prevented
     throw new TypeError(
       'Only absolute urls should be passed to `unhashUrl()`. ' +
       'Unable to detect url hostname.'

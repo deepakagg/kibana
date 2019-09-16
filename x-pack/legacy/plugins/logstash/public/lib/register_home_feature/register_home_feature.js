@@ -24,7 +24,7 @@ FeatureCatalogueRegistryProvider.register($injector => {
       defaultMessage: 'Create, delete, update, and clone data ingestion pipelines.',
     }),
     icon: 'pipelineApp',
-    path: '/app/kibana#/management/logstash/pipelines',
+    path: '/app/nextsoftware#/management/logstash/pipelines',
     showOnHomePage: true,
     category: FeatureCatalogueCategory.ADMIN
   };

@@ -9,7 +9,7 @@ import expect from '@kbn/expect';
 
 import { replaceInjectedVars } from '../replace_injected_vars';
 
-const buildRequest = (telemetryOptedIn = null, path = '/app/kibana') => {
+const buildRequest = (telemetryOptedIn = null, path = '/app/nextsoftware') => {
   const get = sinon.stub();
   if (telemetryOptedIn === null) {
     get.withArgs('telemetry', 'telemetry').returns(Promise.reject(new Error('not found exception')));

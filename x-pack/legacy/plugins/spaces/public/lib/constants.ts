@@ -20,4 +20,4 @@ export const getSpacesFeatureDescription = () => {
   return spacesFeatureDescription;
 };
 
-export const MANAGE_SPACES_URL = chrome.addBasePath(`/app/kibana#/management/spaces/list`);
+export const MANAGE_SPACES_URL = chrome.addBasePath(`/app/nextsoftware#/management/spaces/list`);

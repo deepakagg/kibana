@@ -83,7 +83,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       }
     ),
     icon: 'visualizeApp',
-    path: `/app/kibana#${VisualizeConstants.LANDING_PAGE_PATH}`,
+    path: `/app/nextsoftware#${VisualizeConstants.LANDING_PAGE_PATH}`,
     showOnHomePage: true,
     category: FeatureCatalogueCategory.DATA
   };

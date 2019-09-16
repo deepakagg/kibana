@@ -142,7 +142,7 @@ export const ChecklistFlyoutStep: React.StatelessComponent<{
                   values={{
                     apmSetupLink: (
                       <EuiLink
-                        href={chrome.addBasePath(`/app/kibana#/home/tutorial/apm`)}
+                        href={chrome.addBasePath(`/app/nextsoftware#/home/tutorial/apm`)}
                         target="_blank"
                       >
                         <FormattedMessage

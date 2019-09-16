@@ -140,7 +140,7 @@ export class ChromeService {
               kibanaDocLink={docLinks.links.kibana}
               forceAppSwitcherNavigation$={navLinks.getForceAppSwitcherNavigation$()}
               helpExtension$={helpExtension$.pipe(takeUntil(this.stop$))}
-              homeHref={http.basePath.prepend('/app/kibana#/home')}
+              homeHref={http.basePath.prepend('/app/nextsoftware#/home')}
               isVisible$={isVisible$.pipe(
                 map(visibility => (FORCE_HIDDEN ? false : visibility)),
                 takeUntil(this.stop$)

@@ -139,8 +139,8 @@ export function createUrlFormat(FieldFormat) {
            * This code attempts to convert a relative url into a kibana absolute url
            *
            * SUPPORTED:
-           *  - /app/kibana/
-           *  - ../app/kibana
+           *  - /app/nextsoftware/
+           *  - ../app/nextsoftware
            *  - #/discover
            *
            * UNSUPPORTED
@@ -151,11 +151,11 @@ export function createUrlFormat(FieldFormat) {
             if (url[0] === '#') {
               prefix = `${parsedUrl.origin}${parsedUrl.pathname}`;
             }
-            // Handle urls like: `/app/kibana` or `/xyz/app/kibana`
+            // Handle urls like: `/app/nextsoftware` or `/xyz/app/nextsoftware`
             else if (url.indexOf(parsedUrl.basePath || '/') === 0) {
               prefix = `${parsedUrl.origin}`;
             }
-            // Handle urls like: `../app/kibana`
+            // Handle urls like: `../app/nextsoftware`
             else {
               prefix = `${parsedUrl.origin}${parsedUrl.basePath}/app/`;
             }

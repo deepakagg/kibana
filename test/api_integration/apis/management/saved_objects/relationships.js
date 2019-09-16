@@ -78,7 +78,7 @@ export default function ({ getService }) {
                   icon: 'indexPatternApp',
                   editUrl: '/management/kibana/index_patterns/8963ca30-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/management/kibana/index_patterns/8963ca30-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/management/kibana/index_patterns/8963ca30-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'management.kibana.index_patterns',
                   },
                 },
@@ -92,7 +92,7 @@ export default function ({ getService }) {
                   icon: 'visualizeApp',
                   editUrl: '/management/kibana/objects/savedVisualizations/a42c0580-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'visualize.show',
                   },
                 },
@@ -115,7 +115,7 @@ export default function ({ getService }) {
                   title: 'saved_objects*',
                   editUrl: '/management/kibana/index_patterns/8963ca30-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/management/kibana/index_patterns/8963ca30-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/management/kibana/index_patterns/8963ca30-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'management.kibana.index_patterns',
                   },
                 },
@@ -129,7 +129,7 @@ export default function ({ getService }) {
                   title: 'VisualizationFromSavedSearch',
                   editUrl: '/management/kibana/objects/savedVisualizations/a42c0580-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'visualize.show',
                   },
                 },
@@ -171,7 +171,7 @@ export default function ({ getService }) {
                   title: 'Visualization',
                   editUrl: '/management/kibana/objects/savedVisualizations/add810b0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/visualize/edit/add810b0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/visualize/edit/add810b0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'visualize.show',
                   },
                 },
@@ -185,7 +185,7 @@ export default function ({ getService }) {
                   title: 'VisualizationFromSavedSearch',
                   editUrl: '/management/kibana/objects/savedVisualizations/a42c0580-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'visualize.show',
                   },
                 },
@@ -208,7 +208,7 @@ export default function ({ getService }) {
                   title: 'Visualization',
                   editUrl: '/management/kibana/objects/savedVisualizations/add810b0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/visualize/edit/add810b0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/visualize/edit/add810b0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'visualize.show',
                   },
                 },
@@ -222,7 +222,7 @@ export default function ({ getService }) {
                   title: 'VisualizationFromSavedSearch',
                   editUrl: '/management/kibana/objects/savedVisualizations/a42c0580-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/visualize/edit/a42c0580-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'visualize.show',
                   },
                 },
@@ -266,7 +266,7 @@ export default function ({ getService }) {
                   title: 'OneRecord',
                   editUrl: '/management/kibana/objects/savedSearches/960372e0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/discover/960372e0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/discover/960372e0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'discover.show',
                   },
                 },
@@ -280,7 +280,7 @@ export default function ({ getService }) {
                   title: 'Dashboard',
                   editUrl: '/management/kibana/objects/savedDashboards/b70c7ae0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/dashboard/b70c7ae0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/dashboard/b70c7ae0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'dashboard.show',
                   },
                 },
@@ -303,7 +303,7 @@ export default function ({ getService }) {
                   title: 'OneRecord',
                   editUrl: '/management/kibana/objects/savedSearches/960372e0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/discover/960372e0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/discover/960372e0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'discover.show',
                   },
                 },
@@ -346,7 +346,7 @@ export default function ({ getService }) {
                   title: 'OneRecord',
                   editUrl: '/management/kibana/objects/savedSearches/960372e0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/discover/960372e0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/discover/960372e0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'discover.show',
                   },
                 },
@@ -360,7 +360,7 @@ export default function ({ getService }) {
                   title: 'Visualization',
                   editUrl: '/management/kibana/objects/savedVisualizations/add810b0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/visualize/edit/add810b0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/visualize/edit/add810b0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'visualize.show',
                   },
                 },
@@ -383,7 +383,7 @@ export default function ({ getService }) {
                   title: 'OneRecord',
                   editUrl: '/management/kibana/objects/savedSearches/960372e0-3224-11e8-a572-ffca06da1357',
                   inAppUrl: {
-                    path: '/app/kibana#/discover/960372e0-3224-11e8-a572-ffca06da1357',
+                    path: '/app/nextsoftware#/discover/960372e0-3224-11e8-a572-ffca06da1357',
                     uiCapabilitiesPath: 'discover.show',
                   },
                 },

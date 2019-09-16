@@ -49,7 +49,7 @@ export function compatibilityShimFactory(server) {
 
     const hash = appPrefix + uriEncode.string(savedObjectId, true);
 
-    return `/app/kibana#${hash}?${queryString || ''}`;
+    return `/app/nextsoftware#${hash}?${queryString || ''}`;
   };
 
   return function compatibilityShimFactory(createJob) {

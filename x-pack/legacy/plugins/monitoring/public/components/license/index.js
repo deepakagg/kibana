@@ -20,7 +20,7 @@ import { LicenseStatus, AddLicense } from 'plugins/xpack_main/components';
 import { FormattedMessage } from '@kbn/i18n/react';
 import chrome from 'ui/chrome';
 
-const licenseManagement = `${chrome.getBasePath()}/app/kibana#/management/elasticsearch/license_management`;
+const licenseManagement = `${chrome.getBasePath()}/app/nextsoftware#/management/elasticsearch/license_management`;
 
 const LicenseUpdateInfoForPrimary = ({ isPrimaryCluster, uploadLicensePath }) => {
   if (!isPrimaryCluster) {

@@ -46,7 +46,7 @@ export class LicenseViewController {
     this.isPrimaryCluster = cluster.isPrimary;
 
     const basePath = chrome.getBasePath();
-    this.uploadLicensePath = basePath + '/app/kibana#' + MANAGEMENT_BASE_PATH + 'upload_license';
+    this.uploadLicensePath = basePath + '/app/nextsoftware#' + MANAGEMENT_BASE_PATH + 'upload_license';
 
     this.renderReact($scope);
   }

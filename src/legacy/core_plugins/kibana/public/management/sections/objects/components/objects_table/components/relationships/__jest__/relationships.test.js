@@ -63,7 +63,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/objects/savedSearches/1',
             icon: 'search',
             inAppUrl: {
-              path: '/app/kibana#/discover/1',
+              path: '/app/nextsoftware#/discover/1',
               uiCapabilitiesPath: 'discover.show',
             },
             title: 'My Search Title',
@@ -77,7 +77,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/objects/savedVisualizations/2',
             icon: 'visualizeApp',
             inAppUrl: {
-              path: '/app/kibana#/visualize/edit/2',
+              path: '/app/nextsoftware#/visualize/edit/2',
               uiCapabilitiesPath: 'visualize.show',
             },
             title: 'My Visualization Title',
@@ -130,7 +130,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/index_patterns/1',
             icon: 'indexPatternApp',
             inAppUrl: {
-              path: '/app/kibana#/management/kibana/index_patterns/1',
+              path: '/app/nextsoftware#/management/kibana/index_patterns/1',
               uiCapabilitiesPath: 'management.kibana.index_patterns',
             },
             title: 'My Index Pattern',
@@ -144,7 +144,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/objects/savedVisualizations/2',
             icon: 'visualizeApp',
             inAppUrl: {
-              path: '/app/kibana#/visualize/edit/2',
+              path: '/app/nextsoftware#/visualize/edit/2',
               uiCapabilitiesPath: 'visualize.show',
             },
             title: 'My Visualization Title',
@@ -197,7 +197,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/objects/savedDashboards/1',
             icon: 'dashboardApp',
             inAppUrl: {
-              path: '/app/kibana#/dashboard/1',
+              path: '/app/nextsoftware#/dashboard/1',
               uiCapabilitiesPath: 'dashboard.show',
             },
             title: 'My Dashboard 1',
@@ -211,7 +211,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/objects/savedDashboards/2',
             icon: 'dashboardApp',
             inAppUrl: {
-              path: '/app/kibana#/dashboard/2',
+              path: '/app/nextsoftware#/dashboard/2',
               uiCapabilitiesPath: 'dashboard.show',
             },
             title: 'My Dashboard 2',
@@ -264,7 +264,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/objects/savedVisualizations/1',
             icon: 'visualizeApp',
             inAppUrl: {
-              path: '/app/kibana#/visualize/edit/1',
+              path: '/app/nextsoftware#/visualize/edit/1',
               uiCapabilitiesPath: 'visualize.show',
             },
             title: 'My Visualization Title 1',
@@ -278,7 +278,7 @@ describe('Relationships', () => {
             editUrl: '/management/kibana/objects/savedVisualizations/2',
             icon: 'visualizeApp',
             inAppUrl: {
-              path: '/app/kibana#/visualize/edit/2',
+              path: '/app/nextsoftware#/visualize/edit/2',
               uiCapabilitiesPath: 'visualize.show',
             },
             title: 'My Visualization Title 2',

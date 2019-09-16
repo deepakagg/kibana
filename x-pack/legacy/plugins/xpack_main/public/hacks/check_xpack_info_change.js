@@ -29,7 +29,7 @@ module.factory('checkXPackInfoChange', ($q, Private, $injector) => {
       return;
     }
 
-    const uploadLicensePath = `${chrome.getBasePath()}/app/kibana#/management/elasticsearch/license_management/upload_license`;
+    const uploadLicensePath = `${chrome.getBasePath()}/app/nextsoftware#/management/elasticsearch/license_management/upload_license`;
 
     if (!isLicenseExpirationBannerShown) {
       isLicenseExpirationBannerShown = true;
