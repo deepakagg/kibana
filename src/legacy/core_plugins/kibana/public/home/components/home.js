@@ -141,6 +141,7 @@ export class Home extends Component {
             isNewKibanaInstance={this.state.isNewKibanaInstance}
           />
 
+          {/*
           <EuiSpacer size="l" />
 
           <EuiFlexGroup>
@@ -199,7 +200,10 @@ export class Home extends Component {
               </EuiButton>
             </EuiFlexItem>
           </EuiFlexGroup>
-        </EuiPageBody>
+        
+          */
+         }
+          </EuiPageBody>
       </EuiPage>
     );
   }
