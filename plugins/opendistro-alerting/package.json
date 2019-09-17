@@ -1,0 +1,39 @@
+{
+  "name": "opendistro-alerting",
+  "version": "1.2.0.0",
+  "description": "Kibana Alerting Plugin",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/opendistro-for-elasticsearch/alerting-kibana-plugin",
+  "kibana": {
+    "version": "7.2.0",
+    "templateVersion": "6.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opendistro-for-elasticsearch/alerting-kibana-plugin"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "brace": "^0.11.1",
+    "formik": "1.1.1",
+    "lodash": "^4.17.13",
+    "query-string": "5.1.1",
+    "react-router-dom": "4.3.1"
+  },
+  "resolutions": {
+    "fstream": "1.0.12"
+  },
+  "build": {
+    "git": {
+      "count": "46",
+      "sha": "a1e633d",
+      "date": "Tue, 13 Aug 2019 15:22:25 -0700"
+    },
+    "date": "Tue Aug 13 2019 22:42:41 GMT+0000 (Coordinated Universal Time)"
+  }
+}
