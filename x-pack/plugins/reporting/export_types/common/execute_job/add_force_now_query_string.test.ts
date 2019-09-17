@@ -24,12 +24,12 @@ test(`fails if no URL is passed`, async () => {
 test(`adds forceNow to hash's query, if it exists`, async () => {
   const forceNow = '2000-01-01T00:00:00.000Z';
   const { urls } = await addForceNowQuerystring({
-    job: { relativeUrl: '/app/kibana#/something', forceNow },
+    job: { relativeUrl: '/app/iot#/something', forceNow },
     server: mockServer,
   });
 
   expect(urls[0]).toEqual(
-    'http://localhost:5601/sbp/app/kibana#/something?forceNow=2000-01-01T00%3A00%3A00.000Z'
+    'http://localhost:5601/sbp/app/iot#/something?forceNow=2000-01-01T00%3A00%3A00.000Z'
   );
 });
 
@@ -38,24 +38,24 @@ test(`appends forceNow to hash's query, if it exists`, async () => {
 
   const { urls } = await addForceNowQuerystring({
     job: {
-      relativeUrl: '/app/kibana#/something?_g=something',
+      relativeUrl: '/app/iot#/something?_g=something',
       forceNow,
     },
     server: mockServer,
   });
 
   expect(urls[0]).toEqual(
-    'http://localhost:5601/sbp/app/kibana#/something?_g=something&forceNow=2000-01-01T00%3A00%3A00.000Z'
+    'http://localhost:5601/sbp/app/iot#/something?_g=something&forceNow=2000-01-01T00%3A00%3A00.000Z'
   );
 });
 
 test(`doesn't append forceNow query to url, if it doesn't exists`, async () => {
   const { urls } = await addForceNowQuerystring({
     job: {
-      relativeUrl: '/app/kibana#/something',
+      relativeUrl: '/app/iot#/something',
     },
     server: mockServer,
   });
 
-  expect(urls[0]).toEqual('http://localhost:5601/sbp/app/kibana#/something');
+  expect(urls[0]).toEqual('http://localhost:5601/sbp/app/iot#/something');
 });

@@ -186,7 +186,7 @@ describe('onPostAuthRequestInterceptor', () => {
         },
       ];
 
-      const response = await request('/s/not-found/app/kibana', spaces);
+      const response = await request('/s/not-found/app/iot', spaces);
 
       expect(response.statusCode).toEqual(302);
       expect(response.headers.location).toEqual(serverBasePath);
@@ -205,7 +205,7 @@ describe('onPostAuthRequestInterceptor', () => {
       },
     ];
 
-    const response = await request('/s/a-space/app/kibana', spaces);
+    const response = await request('/s/a-space/app/iot', spaces);
 
     expect(response.statusCode).toEqual(200);
   });
@@ -294,7 +294,7 @@ describe('onPostAuthRequestInterceptor', () => {
         },
       ];
 
-      const response = await request('/s/a-space/app/kibana', spaces);
+      const response = await request('/s/a-space/app/iot', spaces);
 
       expect(response.statusCode).toEqual(200);
 

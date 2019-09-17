@@ -96,7 +96,7 @@ uiModules
     SavedVis.searchSource = true;
 
     SavedVis.prototype.getFullPath = function () {
-      return `/app/kibana#${VisualizeConstants.EDIT_PATH}/${this.id}`;
+      return `/app/iot#${VisualizeConstants.EDIT_PATH}/${this.id}`;
     };
 
     SavedVis.prototype._afterEsResp = function () {

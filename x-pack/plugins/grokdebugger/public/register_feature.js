@@ -26,7 +26,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       }
     }),
     icon: 'grokApp',
-    path: '/app/kibana#/dev_tools/grokdebugger',
+    path: '/app/iot#/dev_tools/grokdebugger',
     showOnHomePage: false,
     category: FeatureCatalogueCategory.ADMIN
   };

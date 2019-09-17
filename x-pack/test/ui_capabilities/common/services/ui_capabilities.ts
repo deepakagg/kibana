@@ -49,7 +49,7 @@ export class UICapabilitiesService {
     spaceId?: string;
   }): Promise<GetUICapabilitiesResult> {
     const spaceUrlPrefix = spaceId ? `/s/${spaceId}` : '';
-    this.log.debug(`requesting ${spaceUrlPrefix}/app/kibana to parse the uiCapabilities`);
+    this.log.debug(`requesting ${spaceUrlPrefix}/app/iot to parse the uiCapabilities`);
     const requestHeaders = credentials
       ? {
           Authorization: `Basic ${Buffer.from(
@@ -57,7 +57,7 @@ export class UICapabilitiesService {
           ).toString('base64')}`,
         }
       : {};
-    const response = await this.axios.get(`${spaceUrlPrefix}/app/kibana`, {
+    const response = await this.axios.get(`${spaceUrlPrefix}/app/iot`, {
       headers: requestHeaders,
     });
 

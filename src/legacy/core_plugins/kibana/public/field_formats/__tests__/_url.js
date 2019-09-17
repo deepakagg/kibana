@@ -182,8 +182,8 @@ describe('Url Format', function () {
         };
         const converter = url.getConverterFor('html');
 
-        expect(converter('../app/kibana', null, null, parsedUrl))
-          .to.be('<span ng-non-bindable><a href="http://kibana.host.com/abc/app/../app/kibana" target="_blank" rel="noopener noreferrer">../app/kibana</a></span>');
+        expect(converter('../app/iot', null, null, parsedUrl))
+          .to.be('<span ng-non-bindable><a href="http://kibana.host.com/abc/app/../app/iot" target="_blank" rel="noopener noreferrer">../app/iot</a></span>');
       });
 
       it('should fail gracefully if there are no parsedUrl provided', function () {
@@ -191,8 +191,8 @@ describe('Url Format', function () {
         const parsedUrl = null;
         const converter = url.getConverterFor('html');
 
-        expect(converter('../app/kibana', null, null, parsedUrl))
-          .to.be('<span ng-non-bindable>../app/kibana</span>');
+        expect(converter('../app/iot', null, null, parsedUrl))
+          .to.be('<span ng-non-bindable>../app/iot</span>');
 
         expect(converter('http://www.elastic.co', null, null, parsedUrl))
           .to.be('<span ng-non-bindable><a href="http://www.elastic.co" target="_blank" rel="noopener noreferrer">http://www.elastic.co</a></span>');
@@ -202,16 +202,16 @@ describe('Url Format', function () {
         const url = new Url();
         const parsedUrl = {
           origin: 'http://kibana.host.com',
-          pathname: '/nbc/app/kibana#/discover',
+          pathname: '/nbc/app/iot#/discover',
           basePath: '/nbc',
         };
         const converter = url.getConverterFor('html');
 
         expect(converter('#/foo', null, null, parsedUrl))
-          .to.be('<span ng-non-bindable><a href="http://kibana.host.com/nbc/app/kibana#/discover#/foo" target="_blank" rel="noopener noreferrer">#/foo</a></span>');
+          .to.be('<span ng-non-bindable><a href="http://kibana.host.com/nbc/app/iot#/discover#/foo" target="_blank" rel="noopener noreferrer">#/foo</a></span>');
 
-        expect(converter('/nbc/app/kibana#/discover', null, null, parsedUrl))
-          .to.be('<span ng-non-bindable><a href="http://kibana.host.com/nbc/app/kibana#/discover" target="_blank" rel="noopener noreferrer">/nbc/app/kibana#/discover</a></span>');
+        expect(converter('/nbc/app/iot#/discover', null, null, parsedUrl))
+          .to.be('<span ng-non-bindable><a href="http://kibana.host.com/nbc/app/iot#/discover" target="_blank" rel="noopener noreferrer">/nbc/app/iot#/discover</a></span>');
 
         expect(converter('../foo/bar', null, null, parsedUrl))
           .to.be('<span ng-non-bindable><a href="http://kibana.host.com/nbc/app/../foo/bar" target="_blank" rel="noopener noreferrer">../foo/bar</a></span>');

@@ -29,7 +29,7 @@ const module = uiModules.get('kibana');
 module.directive('headerGlobalNav', (reactDirective, chrome, Private, uiCapabilities) => {
   const { recentlyAccessed } = require('ui/persisted_log');
   const navControls = Private(chromeHeaderNavControlsRegistry);
-  const homeHref = chrome.addBasePath('/app/kibana#/home');
+  const homeHref = chrome.addBasePath('/app/iot#/home');
   const newPlatform = getNewPlatform();
   const newPlatformStart = newPlatform.start.core;
 

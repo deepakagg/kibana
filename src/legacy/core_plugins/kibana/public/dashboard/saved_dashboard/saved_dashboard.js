@@ -110,7 +110,7 @@ module.factory('SavedDashboard', function (Private) {
   SavedDashboard.searchsource = true;
 
   SavedDashboard.prototype.getFullPath = function () {
-    return `/app/kibana#${createDashboardEditUrl(this.id)}`;
+    return `/app/iot#${createDashboardEditUrl(this.id)}`;
   };
 
   return SavedDashboard;

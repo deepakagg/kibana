@@ -112,7 +112,7 @@ test(`passes the relativeUrls through`, async () => {
 
   const createJobMock = jest.fn();
 
-  const relativeUrls = ['/app/kibana#something', '/app/kibana#something-else'];
+  const relativeUrls = ['/app/iot#something', '/app/iot#something-else'];
   await compatibilityShim(createJobMock)({ title: 'test', relativeUrls }, null, null);
   expect(createJobMock.mock.calls.length).toBe(1);
   expect(createJobMock.mock.calls[0][0].relativeUrls).toBe(relativeUrls);
@@ -129,9 +129,9 @@ const testSavedObjectRelativeUrl = (objectType, expectedUrl) => {
   });
 };
 
-testSavedObjectRelativeUrl('search', '/app/kibana#/discover/abc?');
-testSavedObjectRelativeUrl('visualization', '/app/kibana#/visualize/edit/abc?');
-testSavedObjectRelativeUrl('dashboard', '/app/kibana#/dashboard/abc?');
+testSavedObjectRelativeUrl('search', '/app/iot#/discover/abc?');
+testSavedObjectRelativeUrl('visualization', '/app/iot#/visualize/edit/abc?');
+testSavedObjectRelativeUrl('dashboard', '/app/iot#/dashboard/abc?');
 
 test(`appends the queryString to the relativeUrl when generating from the savedObject`, async () => {
   const compatibilityShim = compatibilityShimFactory(createMockServer());
@@ -139,7 +139,7 @@ test(`appends the queryString to the relativeUrl when generating from the savedO
 
   await compatibilityShim(createJobMock)({ title: 'test', objectType: 'search', savedObjectId: 'abc', queryString: 'foo=bar' }, null, null);
   expect(createJobMock.mock.calls.length).toBe(1);
-  expect(createJobMock.mock.calls[0][0].relativeUrls).toEqual(['/app/kibana#/discover/abc?foo=bar']);
+  expect(createJobMock.mock.calls[0][0].relativeUrls).toEqual(['/app/iot#/discover/abc?foo=bar']);
 });
 
 test(`throw an Error if the objectType, savedObjectId and relativeUrls are provided`, async () => {

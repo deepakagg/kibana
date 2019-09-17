@@ -28,7 +28,7 @@ describe('UiNavLink', () => {
         id: 'kibana:discover',
         title: 'Discover',
         order: -1003,
-        url: '/app/kibana#/discover',
+        url: '/app/iot#/discover',
         icon: 'plugins/kibana/assets/discover.svg',
         euiIconType: 'discoverApp',
         hidden: true,
@@ -57,7 +57,7 @@ describe('UiNavLink', () => {
       const spec = {
         id: 'kibana:discover',
         title: 'Discover',
-        url: '/app/kibana#/discover',
+        url: '/app/iot#/discover',
         icon: 'plugins/kibana/assets/discover.svg',
       };
       const link = new UiNavLink(spec);
@@ -70,7 +70,7 @@ describe('UiNavLink', () => {
         id: 'kibana:discover',
         title: 'Discover',
         order: -1003,
-        url: '/app/kibana#/discover',
+        url: '/app/iot#/discover',
         icon: 'plugins/kibana/assets/discover.svg',
         linkToLastSubUrl: false
       };
@@ -84,7 +84,7 @@ describe('UiNavLink', () => {
         id: 'kibana:discover',
         title: 'Discover',
         order: -1003,
-        url: '/app/kibana#/discover',
+        url: '/app/iot#/discover',
         icon: 'plugins/kibana/assets/discover.svg',
       };
       const link = new UiNavLink(spec);
@@ -97,7 +97,7 @@ describe('UiNavLink', () => {
         id: 'kibana:discover',
         title: 'Discover',
         order: -1003,
-        url: '/app/kibana#/discover',
+        url: '/app/iot#/discover',
         icon: 'plugins/kibana/assets/discover.svg',
       };
       const link = new UiNavLink(spec);
@@ -110,7 +110,7 @@ describe('UiNavLink', () => {
         id: 'kibana:discover',
         title: 'Discover',
         order: -1003,
-        url: '/app/kibana#/discover',
+        url: '/app/iot#/discover',
         icon: 'plugins/kibana/assets/discover.svg',
       };
       const link = new UiNavLink(spec);
@@ -123,7 +123,7 @@ describe('UiNavLink', () => {
         id: 'kibana:discover',
         title: 'Discover',
         order: -1003,
-        url: '/app/kibana#/discover',
+        url: '/app/iot#/discover',
         icon: 'plugins/kibana/assets/discover.svg',
       };
       const link = new UiNavLink(spec);

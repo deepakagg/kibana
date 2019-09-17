@@ -70,7 +70,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Skip cURL and use this JSON interface to work with your data directly.'
     }),
     icon: 'consoleApp',
-    path: '/app/kibana#/dev_tools/console',
+    path: '/app/iot#/dev_tools/console',
     showOnHomePage: true,
     category: FeatureCatalogueCategory.ADMIN
   };

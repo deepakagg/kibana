@@ -33,9 +33,9 @@ export function SpaceSelectorPageProvider({ getService, getPageObjects }) {
         await find.byCssSelector('[data-test-subj="kibanaChrome"] nav:not(.ng-hide) ', 20000);
         const url = await browser.getCurrentUrl();
         if (spaceId === 'default') {
-          expect(url).to.contain(`/app/kibana#/home`);
+          expect(url).to.contain(`/app/iot#/home`);
         } else {
-          expect(url).to.contain(`/s/${spaceId}/app/kibana#/home`);
+          expect(url).to.contain(`/s/${spaceId}/app/iot#/home`);
         }
       });
     }

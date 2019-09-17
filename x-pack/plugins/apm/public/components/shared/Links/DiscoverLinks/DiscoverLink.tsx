@@ -47,7 +47,7 @@ export function DiscoverLink({ query = {}, ...rest }: Props) {
   };
 
   const href = url.format({
-    pathname: chrome.addBasePath('/app/kibana'),
+    pathname: chrome.addBasePath('/app/iot'),
     hash: `/discover?_g=${rison.encode(risonQuery._g)}&_a=${rison.encode(
       risonQuery._a as RisonValue
     )}`

@@ -20,7 +20,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Quickly check the performance of any Elasticsearch query.',
     }),
     icon: 'searchProfilerApp',
-    path: '/app/kibana#/dev_tools/searchprofiler',
+    path: '/app/iot#/dev_tools/searchprofiler',
     showOnHomePage: false,
     category: FeatureCatalogueCategory.ADMIN
   };

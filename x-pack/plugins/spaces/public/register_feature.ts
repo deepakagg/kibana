@@ -20,7 +20,7 @@ FeatureCatalogueRegistryProvider.register(() => {
     }),
     description: getSpacesFeatureDescription(),
     icon: 'spacesApp',
-    path: '/app/kibana#/management/spaces/list',
+    path: '/app/iot#/management/spaces/list',
     showOnHomePage: true,
     category: FeatureCatalogueCategory.ADMIN,
   };

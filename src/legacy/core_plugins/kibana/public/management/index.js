@@ -182,7 +182,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Your center console for managing the Elastic Stack.',
     }),
     icon: 'managementApp',
-    path: '/app/kibana#/management',
+    path: '/app/iot#/management',
     showOnHomePage: false,
     category: FeatureCatalogueCategory.ADMIN
   };

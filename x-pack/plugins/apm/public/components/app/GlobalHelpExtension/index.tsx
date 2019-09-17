@@ -33,7 +33,7 @@ export const GlobalHelpExtension: React.SFC = () => {
       <Container>
         <EuiLink
           href={url.format({
-            pathname: chrome.addBasePath('/app/kibana'),
+            pathname: chrome.addBasePath('/app/iot'),
             hash: '/management/elasticsearch/upgrade_assistant'
           })}
         >

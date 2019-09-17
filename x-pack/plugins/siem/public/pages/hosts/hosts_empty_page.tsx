@@ -19,7 +19,7 @@ export const HostsEmptyPage = pure(() => (
   <EmptyPage
     actionPrimaryIcon="gear"
     actionPrimaryLabel={i18n.EMPTY_ACTION_PRIMARY}
-    actionPrimaryUrl={`${basePath}/app/kibana#/home/tutorial_directory/security`}
+    actionPrimaryUrl={`${basePath}/app/iot#/home/tutorial_directory/security`}
     actionSecondaryIcon="popout"
     actionSecondaryLabel={i18n.EMPTY_ACTION_SECONDARY}
     actionSecondaryTarget="_blank"

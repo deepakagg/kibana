@@ -116,7 +116,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Directly edit settings that control behavior in Kibana.',
     }),
     icon: 'advancedSettingsApp',
-    path: '/app/kibana#/management/kibana/settings',
+    path: '/app/iot#/management/kibana/settings',
     showOnHomePage: false,
     category: FeatureCatalogueCategory.ADMIN
   };

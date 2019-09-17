@@ -20,7 +20,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Protect your data and easily manage who has access to what with users and roles.'
     }),
     icon: 'securityApp',
-    path: '/app/kibana#/management/security',
+    path: '/app/iot#/management/security',
     showOnHomePage: true,
     category: FeatureCatalogueCategory.ADMIN
   };

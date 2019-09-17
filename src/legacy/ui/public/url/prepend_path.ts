@@ -24,7 +24,7 @@ import { format, parse } from 'url';
  *
  * @param {string} relativePath - a relative path that must start with a "/".
  * @param {string} newPath - the new path to prefix. ex: 'xyz'
- * @return {string} the url with the basePath prepended. ex. '/xyz/app/kibana#/management'. If
+ * @return {string} the url with the basePath prepended. ex. '/xyz/app/iot#/management'. If
  * the relative path isn't in the right format (e.g. doesn't start with a "/") the relativePath is returned
  * unchanged.
  */

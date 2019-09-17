@@ -83,7 +83,7 @@ export default () => Joi.object({
     port: Joi.number().default(5601),
     maxPayloadBytes: Joi.number().default(1048576),
     autoListen: Joi.boolean().default(true),
-    defaultRoute: Joi.string().default('/app/kibana').regex(/^\//, `start with a slash`),
+    defaultRoute: Joi.string().default('/app/iot').regex(/^\//, `start with a slash`),
     basePath: Joi.string().default('').allow('').regex(/(^$|^\/.*[^\/]$)/, `start with a slash, don't end with one`),
     rewriteBasePath: Joi.boolean().when('basePath', {
       is: '',

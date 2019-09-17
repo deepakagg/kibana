@@ -70,7 +70,7 @@ describe('DashboardOnlyModeRequestInterceptor', () => {
       it('lets the route render as normal', async () => {
         const { server } = setup();
         const response = await server.inject({
-          url: '/app/kibana',
+          url: '/app/iot',
           credentials: {
             scope: ['foo', 'bar']
           }
@@ -126,7 +126,7 @@ describe('DashboardOnlyModeRequestInterceptor', () => {
         it('renders the dashboardViewerApp instead', async () => {
           const { server, authScope } = setup();
           const response = await server.inject({
-            url: '/app/kibana',
+            url: '/app/iot',
             credentials: {
               scope: [authScope]
             }
@@ -142,9 +142,9 @@ describe('DashboardOnlyModeRequestInterceptor', () => {
       });
     }
 
-    testRendersDashboardViewerApp('/app/kibana');
-    testRendersDashboardViewerApp('/app/kibana#/foo/bar');
-    testRendersDashboardViewerApp('/app/kibana/foo/bar');
-    testRendersDashboardViewerApp('/app/kibana?foo=bar');
+    testRendersDashboardViewerApp('/app/iot');
+    testRendersDashboardViewerApp('/app/iot#/foo/bar');
+    testRendersDashboardViewerApp('/app/iot/foo/bar');
+    testRendersDashboardViewerApp('/app/iot?foo=bar');
   });
 });

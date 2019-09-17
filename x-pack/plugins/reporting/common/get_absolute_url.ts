@@ -15,7 +15,7 @@ function getAbsoluteUrlFn(server: KbnServer) {
   return function getAbsoluteUrl({
     basePath = config.get('server.basePath'),
     hash = '',
-    path = '/app/kibana',
+    path = '/app/iot',
     search = '',
   } = {}) {
     return url.format({

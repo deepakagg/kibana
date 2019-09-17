@@ -16,7 +16,7 @@ interface Props extends EuiLinkAnchorProps {
 
 export function KibanaLink({ path, ...rest }: Props) {
   const href = url.format({
-    pathname: chrome.addBasePath('/app/kibana'),
+    pathname: chrome.addBasePath('/app/iot'),
     hash: path
   });
   return <EuiLink {...rest} href={href} />;

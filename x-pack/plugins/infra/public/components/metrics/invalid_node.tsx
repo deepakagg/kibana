@@ -46,7 +46,7 @@ export const InvalidNodeError: React.FunctionComponent<InvalidNodeErrorProps> = 
             <EuiFlexGroup>
               <EuiFlexItem>
                 <EuiButton
-                  href={`${basePath}/app/kibana#/home/tutorial_directory/metrics`}
+                  href={`${basePath}/app/iot#/home/tutorial_directory/metrics`}
                   color="primary"
                   fill
                 >

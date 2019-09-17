@@ -20,7 +20,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Manage your reports generated from Discover, Visualize, and Dashboard.'
     }),
     icon: 'reportingApp',
-    path: '/app/kibana#/management/kibana/reporting',
+    path: '/app/iot#/management/kibana/reporting',
     showOnHomePage: false,
     category: FeatureCatalogueCategory.ADMIN
   };

@@ -99,6 +99,9 @@ export function uiRenderMixin(kbnServer, server, config) {
         auth: authEnabled ? { mode: 'try' } : false,
       },
       async handler(request, h) {
+        if(request.params === 'iot'){
+          request.params = 'kibana';
+        }
         const { id } = request.params;
         const app = server.getUiAppById(id) || server.getHiddenUiAppById(id);
         if (!app) {
@@ -164,6 +167,9 @@ export function uiRenderMixin(kbnServer, server, config) {
     path: '/app/{id}',
     method: 'GET',
     async handler(req, h) {
+      if(req.params.id === 'iot'){
+        req.params.id = 'kibana';
+      }
       const id = req.params.id;
       const app = server.getUiAppById(id);
       if (!app) throw Boom.notFound('Unknown app ' + id);

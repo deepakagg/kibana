@@ -41,7 +41,7 @@ export const LogsPageNoIndicesContent = injectUICapabilities(
               <EuiFlexGroup>
                 <EuiFlexItem>
                   <EuiButton
-                    href={`${basePath}/app/kibana#/home/tutorial_directory/logging`}
+                    href={`${basePath}/app/iot#/home/tutorial_directory/logging`}
                     color="primary"
                     fill
                     data-test-subj="logsViewSetupInstructionsButton"

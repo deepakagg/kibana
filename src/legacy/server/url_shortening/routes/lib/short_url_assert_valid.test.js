@@ -22,17 +22,17 @@ import { shortUrlAssertValid } from './short_url_assert_valid';
 
 describe('shortUrlAssertValid()', () => {
   const invalid = [
-    ['protocol', 'http://localhost:5601/app/kibana'],
-    ['protocol', 'https://localhost:5601/app/kibana'],
+    ['protocol', 'http://localhost:5601/app/iot'],
+    ['protocol', 'https://localhost:5601/app/iot'],
     ['protocol', 'mailto:foo@bar.net'],
     ['protocol', 'javascript:alert("hi")'], // eslint-disable-line no-script-url
-    ['hostname', 'localhost/app/kibana'],
-    ['hostname and port', 'local.host:5601/app/kibana'],
-    ['hostname and auth', 'user:pass@localhost.net/app/kibana'],
+    ['hostname', 'localhost/app/iot'],
+    ['hostname and port', 'local.host:5601/app/iot'],
+    ['hostname and auth', 'user:pass@localhost.net/app/iot'],
     ['path traversal', '/app/../../not-kibana'],
-    ['deep path', '/app/kibana/foo'],
-    ['deep path', '/app/kibana/foo/bar'],
-    ['base path', '/base/app/kibana'],
+    ['deep path', '/app/iot/foo'],
+    ['deep path', '/app/iot/foo/bar'],
+    ['base path', '/base/app/iot'],
   ];
 
   invalid.forEach(([desc, url]) => {
@@ -49,7 +49,7 @@ describe('shortUrlAssertValid()', () => {
   });
 
   const valid = [
-    '/app/kibana',
+    '/app/iot',
     '/app/monitoring#angular/route',
     '/app/text#document-id',
     '/app/some?with=query',

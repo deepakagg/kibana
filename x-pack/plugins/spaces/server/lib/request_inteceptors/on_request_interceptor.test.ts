@@ -86,7 +86,7 @@ describe('onRequestInterceptor', () => {
         },
         {
           method: 'GET',
-          path: '/app/kibana',
+          path: '/app/iot',
           handler: (req: any) => {
             return { path: req.path, url: req.url, basePath: req.getBasePath() };
           },

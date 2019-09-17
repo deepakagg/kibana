@@ -8,7 +8,7 @@ import { i18n } from '@kbn/i18n';
 import React from 'react';
 import chrome from 'ui/chrome';
 
-const MANAGE_LICENSE_URL = `${chrome.getBasePath()}/app/kibana#/management/elasticsearch/license_management`;
+const MANAGE_LICENSE_URL = `${chrome.getBasePath()}/app/iot#/management/elasticsearch/license_management`;
 
 export function InvalidLicenseNotification() {
   return (

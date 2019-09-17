@@ -11,7 +11,7 @@ test(`by default it builds url using information from server.info.protocol and t
   const mockServer = createMockServer('');
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const absoluteUrl = getAbsoluteUrl();
-  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/kibana`);
+  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/iot`);
 });
 
 test(`uses kibanaServer.protocol if specified`, () => {
@@ -22,7 +22,7 @@ test(`uses kibanaServer.protocol if specified`, () => {
 
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const absoluteUrl = getAbsoluteUrl();
-  expect(absoluteUrl).toBe(`https://localhost:5601/sbp/app/kibana`);
+  expect(absoluteUrl).toBe(`https://localhost:5601/sbp/app/iot`);
 });
 
 test(`uses kibanaServer.hostname if specified`, () => {
@@ -33,7 +33,7 @@ test(`uses kibanaServer.hostname if specified`, () => {
 
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const absoluteUrl = getAbsoluteUrl();
-  expect(absoluteUrl).toBe(`http://something-else:5601/sbp/app/kibana`);
+  expect(absoluteUrl).toBe(`http://something-else:5601/sbp/app/iot`);
 });
 
 test(`uses kibanaServer.port if specified`, () => {
@@ -44,7 +44,7 @@ test(`uses kibanaServer.port if specified`, () => {
 
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const absoluteUrl = getAbsoluteUrl();
-  expect(absoluteUrl).toBe(`http://localhost:8008/sbp/app/kibana`);
+  expect(absoluteUrl).toBe(`http://localhost:8008/sbp/app/iot`);
 });
 
 test(`uses the provided hash`, () => {
@@ -53,7 +53,7 @@ test(`uses the provided hash`, () => {
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const hash = '/hash';
   const absoluteUrl = getAbsoluteUrl({ hash });
-  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/kibana#${hash}`);
+  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/iot#${hash}`);
 });
 
 test(`uses the provided hash with queryString`, () => {
@@ -62,7 +62,7 @@ test(`uses the provided hash with queryString`, () => {
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const hash = '/hash?querystring';
   const absoluteUrl = getAbsoluteUrl({ hash });
-  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/kibana#${hash}`);
+  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/iot#${hash}`);
 });
 
 test(`uses the provided basePath`, () => {
@@ -70,7 +70,7 @@ test(`uses the provided basePath`, () => {
 
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const absoluteUrl = getAbsoluteUrl({ basePath: '/s/marketing' });
-  expect(absoluteUrl).toBe(`http://localhost:5601/s/marketing/app/kibana`);
+  expect(absoluteUrl).toBe(`http://localhost:5601/s/marketing/app/iot`);
 });
 
 test(`uses the path`, () => {
@@ -88,5 +88,5 @@ test(`uses the search`, () => {
   const getAbsoluteUrl = getAbsoluteUrlFactory(mockServer);
   const search = '_t=123456789';
   const absoluteUrl = getAbsoluteUrl({ search });
-  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/kibana?${search}`);
+  expect(absoluteUrl).toBe(`http://localhost:5601/sbp/app/iot?${search}`);
 });

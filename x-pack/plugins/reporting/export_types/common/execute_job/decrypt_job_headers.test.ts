@@ -23,7 +23,7 @@ describe('headers', () => {
   test(`fails if it can't decrypt headers`, async () => {
     await expect(
       decryptJobHeaders({
-        job: { relativeUrl: '/app/kibana#/something', timeRange: {} },
+        job: { relativeUrl: '/app/iot#/something', timeRange: {} },
         server: mockServer,
       })
     ).rejects.toBeDefined();
@@ -37,7 +37,7 @@ describe('headers', () => {
 
     const encryptedHeaders = await encryptHeaders(headers);
     const { decryptedHeaders } = await decryptJobHeaders({
-      job: { relativeUrl: '/app/kibana#/something', headers: encryptedHeaders },
+      job: { relativeUrl: '/app/iot#/something', headers: encryptedHeaders },
       server: mockServer,
     });
     expect(decryptedHeaders).toEqual(headers);

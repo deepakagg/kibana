@@ -217,7 +217,7 @@ export default async function ({ readConfigFile }) {
         pathname: '/app/monitoring',
       },
       logstashPipelines: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/management/logstash/pipelines',
       },
       maps: {
@@ -227,11 +227,11 @@ export default async function ({ readConfigFile }) {
         pathname: '/app/graph',
       },
       grokDebugger: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/dev_tools/grokdebugger',
       },
       searchProfiler: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/dev_tools/searchprofiler',
       },
       spaceSelector: {
@@ -266,7 +266,7 @@ export default async function ({ readConfigFile }) {
         pathname: '/app/ml'
       },
       rollupJob: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/management/elasticsearch/rollup_jobs/',
       },
       apm: {

@@ -146,7 +146,7 @@ class CreateWatchService {
             .then(() => {
               this.status.watch = this.STATUS.SAVED;
               this.config.watcherEditURL =
-              `${chrome.getBasePath()}/app/kibana#/management/elasticsearch/watcher/watches/watch/${id}/edit?_g=()`;
+              `${chrome.getBasePath()}/app/iot#/management/elasticsearch/watcher/watches/watch/${id}/edit?_g=()`;
               resolve({
                 id,
                 url: this.config.watcherEditURL,

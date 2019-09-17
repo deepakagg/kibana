@@ -46,7 +46,7 @@ export function zookeeperMetricsSpecProvider(server, context) {
         label: i18n.translate('kbn.server.tutorials.zookeeperMetrics.artifacts.application.label', {
           defaultMessage: 'Discover',
         }),
-        path: '/app/kibana#/discover'
+        path: '/app/iot#/discover'
       },
       dashboards: [],
       exportedFields: {
