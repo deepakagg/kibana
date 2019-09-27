@@ -52,7 +52,7 @@ describe('setup', () => {
     expect(setupDeps.notifications.toasts.addWarning.mock.calls).toMatchInlineSnapshot(`
 Array [
   Array [
-    "Your browser does not meet the security requirements for Kibana.",
+    "Your browser does not meet the security requirements for dashboard.",
   ],
 ]
 `);
