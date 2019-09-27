@@ -191,7 +191,7 @@ class HeaderUI extends Component<Props, State> {
     return (
       <EuiHeaderLogo
         data-test-subj="logo"
-        iconType="logoKibana"
+        iconType="iInCircle"
         onClick={this.onNavClick}
         href={homeHref}
         aria-label={intl.formatMessage({
