@@ -180,6 +180,22 @@ const AddDataUi = ({ apmUiEnabled, isNewKibanaInstance, intl, mlEnabled }) => {
   };
 
   const footerItemClasses = classNames('homAddData__footerItem', { 'homAddData__footerItem--highlight': isNewKibanaInstance });
+  return (
+    <EuiPanel paddingSize="l">
+      <EuiFlexGroup>
+        <EuiFlexItem>
+          <EuiTitle>
+            <h3 style={{textAlign: 'center'}}>
+              <FormattedMessage
+                id="kbn.home.addData.addDataToKibanaTitle"
+                defaultMessage="Welcome!"
+              />
+            </h3>
+          </EuiTitle>
+        </EuiFlexItem>
+      </EuiFlexGroup>
+    </EuiPanel>
+  );
 
   return (
     <EuiPanel paddingSize="l">
