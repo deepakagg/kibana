@@ -6,8 +6,6 @@ import IntlMessageFormat from 'intl-messageformat';
 import IntlRelativeFormat from 'intl-relativeformat';
 
 function addLocaleData(localeData) {
-  IntlMessageFormat.__addLocaleData = IntlMessageFormat.__addLocaleData || function() {}
-  IntlRelativeFormat.__addLocaleData = IntlRelativeFormat.__addLocaleData || function() {}
   IntlMessageFormat.__addLocaleData(localeData);
   IntlRelativeFormat.__addLocaleData(localeData);
 }
