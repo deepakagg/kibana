@@ -23,7 +23,7 @@ import { promisify } from 'util';
 const randomBytesAsync = promisify(randomBytes);
 
 export const DEFAULT_CSP_RULES = Object.freeze([
-  `script-src 'unsafe-eval' 'nonce-{nonce}'`,
+  `script-src 'unsafe-eval' 'self' 'sha256-SHHSeLc0bp6xt4BoVVyUy+3IbVqp3ujLaR+s+kSP5UI='`,
   'worker-src blob:',
   'child-src blob:',
 ]);
