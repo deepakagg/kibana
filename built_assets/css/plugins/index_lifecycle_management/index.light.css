@@ -1,0 +1,11 @@
+.policyTable__horizontalScrollContainer {
+  overflow-x: auto;
+  max-width: 100%; }
+
+.policyTable__horizontalScroll {
+  min-width: 800px;
+  width: 100%; }
+
+.ilmEditPolicyPageContent {
+  max-width: 1200px !important; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIngtcGFjay9wbHVnaW5zL2luZGV4X2xpZmVjeWNsZV9tYW5hZ2VtZW50L3B1YmxpYy9faW5kZXhfbGlmZWN5Y2xlX21hbmFnZW1lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFnQjtFQUNoQixnQkFBZSxFQUNoQjs7QUFDRDtFQUNFLGlCQUFnQjtFQUNoQixZQUFXLEVBQ1o7O0FBQ0Q7RUFDRSw2QkFBNEIsRUFDN0IiLCJmaWxlIjoieC1wYWNrL3BsdWdpbnMvaW5kZXhfbGlmZWN5Y2xlX21hbmFnZW1lbnQvcHVibGljL2luZGV4LnNjc3MifQ== */

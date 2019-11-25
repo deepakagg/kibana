@@ -1,0 +1,22 @@
+/* Infra plugin styles */
+.infReactRoot {
+  background-color: #1D1E24;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0%;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  overflow: hidden; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIngtcGFjay9wbHVnaW5zL2luZnJhL3B1YmxpYy9pbmRleC5zY3NzIiwibm9kZV9tb2R1bGVzL0BlbGFzdGljL2V1aS9zcmMvdGhlbWVzL2V1aS9ldWlfY29sb3JzX2Rhcmsuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQSx5QkFBeUI7QUFTekI7RUFDRSwwQkNEMEI7RURFMUIscUJBQWE7RUFBYixzQkFBYTtFQUFiLHFCQUFhO0VBQWIsY0FBYTtFQUNiLDZCQUFzQjtFQUF0Qiw4QkFBc0I7RUFBdEIsK0JBQXNCO01BQXRCLDJCQUFzQjtVQUF0Qix1QkFBc0I7RUFDdEIsMkJBQW9CO0VBQXBCLDZCQUFvQjtNQUFwQix3QkFBb0I7VUFBcEIscUJBQW9CO0VBQ3BCLG9CQUFZO0VBQVoscUJBQVk7TUFBWixpQkFBWTtVQUFaLGFBQVk7RUFDWixpQkFBZ0IsRUFDakIiLCJmaWxlIjoieC1wYWNrL3BsdWdpbnMvaW5mcmEvcHVibGljL2luZGV4LnNjc3MifQ== */
