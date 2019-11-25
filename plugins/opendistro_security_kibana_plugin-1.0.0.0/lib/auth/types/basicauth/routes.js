@@ -70,7 +70,7 @@ module.exports = function (pluginRoot, server, kbnServer, APP_ROOT, API_ROOT) {
                                 return h.redirect(nextUrl);
                             }
 
-                            return h.redirect(basePath + '/app/kibana');
+                            return h.redirect(basePath + '/app/iot');
                         }
                     }
                 } catch (error) {
@@ -198,7 +198,7 @@ module.exports = function (pluginRoot, server, kbnServer, APP_ROOT, API_ROOT) {
                             return h.redirect(nextUrl);
                         }
 
-                        return h.redirect(basePath + '/app/kibana');
+                        return h.redirect(basePath + '/app/iot');
 
                     } catch (error) {
 

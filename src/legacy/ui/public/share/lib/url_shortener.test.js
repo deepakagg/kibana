@@ -46,10 +46,10 @@ describe('Url shortener', () => {
       kfetchStub.withArgs({
         method: 'POST',
         pathname: `/api/shorten_url`,
-        body: '{"url":"/app/kibana#123"}'
+        body: '{"url":"/app/iot#123"}'
       }).returns(Promise.resolve({ urlId: shareId }));
 
-      const shortUrl = await shortenUrl('http://localhost:5601/app/kibana#123');
+      const shortUrl = await shortenUrl('http://localhost:5601/app/iot#123');
       expect(shortUrl).to.be(`http://localhost:5601/goto/${shareId}`);
     });
 
@@ -57,10 +57,10 @@ describe('Url shortener', () => {
       kfetchStub.withArgs({
         method: 'POST',
         pathname: `/api/shorten_url`,
-        body: '{"url":"/app/kibana#123"}'
+        body: '{"url":"/app/iot#123"}'
       }).returns(Promise.resolve({ urlId: shareId }));
 
-      const shortUrl = await shortenUrl('http://localhost/app/kibana#123');
+      const shortUrl = await shortenUrl('http://localhost/app/iot#123');
       expect(shortUrl).to.be(`http://localhost/goto/${shareId}`);
     });
   });
@@ -78,10 +78,10 @@ describe('Url shortener', () => {
       kfetchStub.withArgs({
         method: 'POST',
         pathname: `/api/shorten_url`,
-        body: '{"url":"/app/kibana#123"}'
+        body: '{"url":"/app/iot#123"}'
       }).returns(Promise.resolve({ urlId: shareId }));
 
-      const shortUrl = await shortenUrl(`http://localhost:5601${basePath}/app/kibana#123`);
+      const shortUrl = await shortenUrl(`http://localhost:5601${basePath}/app/iot#123`);
       expect(shortUrl).to.be(`http://localhost:5601${basePath}/goto/${shareId}`);
     });
 
@@ -89,10 +89,10 @@ describe('Url shortener', () => {
       kfetchStub.withArgs({
         method: 'POST',
         pathname: `/api/shorten_url`,
-        body: '{"url":"/app/kibana#123"}'
+        body: '{"url":"/app/iot#123"}'
       }).returns(Promise.resolve({ urlId: shareId }));
 
-      const shortUrl = await shortenUrl(`http://localhost${basePath}/app/kibana#123`);
+      const shortUrl = await shortenUrl(`http://localhost${basePath}/app/iot#123`);
       expect(shortUrl).to.be(`http://localhost${basePath}/goto/${shareId}`);
     });
 
@@ -100,10 +100,10 @@ describe('Url shortener', () => {
       kfetchStub.withArgs({
         method: 'POST',
         pathname: `/api/shorten_url`,
-        body: '{"url":"/app/kibana?foo#123"}'
+        body: '{"url":"/app/iot?foo#123"}'
       }).returns(Promise.resolve({ urlId: shareId }));
 
-      const shortUrl = await shortenUrl(`http://localhost${basePath}/app/kibana?foo#123`);
+      const shortUrl = await shortenUrl(`http://localhost${basePath}/app/iot?foo#123`);
       expect(shortUrl).to.be(`http://localhost${basePath}/goto/${shareId}`);
     });
 
@@ -111,19 +111,19 @@ describe('Url shortener', () => {
       kfetchStub.withArgs({
         method: 'POST',
         pathname: `/api/shorten_url`,
-        body: '{"url":"/app/kibana"}'
+        body: '{"url":"/app/iot"}'
       }).returns(Promise.resolve({ urlId: shareId }));
 
-      const shortUrl = await shortenUrl(`http://localhost${basePath}/app/kibana`);
+      const shortUrl = await shortenUrl(`http://localhost${basePath}/app/iot`);
       expect(shortUrl).to.be(`http://localhost${basePath}/goto/${shareId}`);
     });
 
     it('should shorten urls with a query string in the hash', async () => {
-      const relativeUrl = "/app/kibana#/discover?_g=(refreshInterval:(pause:!f,value:0),time:(from:now-15m,mode:quick,to:now))&_a=(columns:!(_source),index:%27logstash-*%27,interval:auto,query:(query_string:(analyze_wildcard:!t,query:%27*%27)),sort:!(%27@timestamp%27,desc))"; //eslint-disable-line max-len, quotes
+      const relativeUrl = "/app/iot#/discover?_g=(refreshInterval:(pause:!f,value:0),time:(from:now-15m,mode:quick,to:now))&_a=(columns:!(_source),index:%27logstash-*%27,interval:auto,query:(query_string:(analyze_wildcard:!t,query:%27*%27)),sort:!(%27@timestamp%27,desc))"; //eslint-disable-line max-len, quotes
       kfetchStub.withArgs({
         method: 'POST',
         pathname: `/api/shorten_url`,
-        body: '{"url":"/app/kibana#/discover?_g=(refreshInterval:(pause:!f,value:0),time:(from:now-15m,mode:quick,to:now))&_a=(columns:!(_source),index:%27logstash-*%27,interval:auto,query:(query_string:(analyze_wildcard:!t,query:%27*%27)),sort:!(%27@timestamp%27,desc))"}' //eslint-disable-line max-len, quotes
+        body: '{"url":"/app/iot#/discover?_g=(refreshInterval:(pause:!f,value:0),time:(from:now-15m,mode:quick,to:now))&_a=(columns:!(_source),index:%27logstash-*%27,interval:auto,query:(query_string:(analyze_wildcard:!t,query:%27*%27)),sort:!(%27@timestamp%27,desc))"}' //eslint-disable-line max-len, quotes
       }).returns(Promise.resolve({ urlId: shareId }));
 
       const shortUrl = await shortenUrl(`http://localhost${basePath}${relativeUrl}`);

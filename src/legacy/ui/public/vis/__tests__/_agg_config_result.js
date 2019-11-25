@@ -136,7 +136,7 @@ describe('AggConfigResult', function () {
             return parsedUrl;
           };
         };
-        const result = new AggConfigResult(aggConfig, null, '../app/kibana/#visualize', 'php');
+        const result = new AggConfigResult(aggConfig, null, '../app/iot/#visualize', 'php');
         const parsedUrl = result.toString('html');
         const keys = Object.keys(parsedUrl);
         expect(keys[0]).to.be('origin');

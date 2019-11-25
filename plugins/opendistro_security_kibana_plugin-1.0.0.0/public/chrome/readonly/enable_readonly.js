@@ -145,7 +145,7 @@ function handleRoutingForDashboardOnly($rootScope, $location) {
     $rootScope.$on('$routeChangeSuccess', function(event, next, current) {
         let currentPath = chrome.removeBasePath(location.pathname);
 
-        if (currentPath === '/app/kibana' && next.$$route) {
+        if (currentPath === '/app/iot' && next.$$route) {
             const intendedPath = next.$$route.originalPath || '';
             if (intendedPath.indexOf('/dashboard') !== 0) {
                 $location.path('/dashboards');
@@ -180,7 +180,7 @@ function handleRoutingForTenantReadOnly($rootScope, $location) {
         if (readOnlyMessageAlreadyShown === false) {
             let currentPath = chrome.removeBasePath(location.pathname);
             // Only show the message in the kibana app(?)
-            if (currentPath.indexOf('/app/kibana') !== 0) {
+            if (currentPath.indexOf('/app/iot') !== 0) {
                 return;
             }
             readOnlyMessageAlreadyShown = true;
@@ -250,7 +250,7 @@ function resolveWithDashboardRole($q, $rootScope, $location, route, dashboardCon
         numberOfTenants++;
     }
 
-    let allowedPaths = ['/app/kibana'];
+    let allowedPaths = ['/app/iot'];
 
     if (numberOfTenants > 1) {
         allowedPaths.push('/app/security-multitenancy')
@@ -261,7 +261,7 @@ function resolveWithDashboardRole($q, $rootScope, $location, route, dashboardCon
     let appPath = chrome.removeBasePath(location.pathname);
     if (allowedPaths.indexOf(appPath) === -1) {
         // This should be safe as long as we have a full page reload between apps.
-        window.location.href = chrome.getBasePath() + '/app/kibana#/dashboards';
+        window.location.href = chrome.getBasePath() + '/app/iot#/dashboards';
         // Stop the route from rendering, otherwise the originally intended page is loaded before the redirect happens
         return $q.reject();
     }

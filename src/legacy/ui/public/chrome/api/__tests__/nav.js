@@ -72,7 +72,7 @@ describe('chrome nav apis', function () {
 
   describe('#untrackNavLinksForDeletedSavedObjects', function () {
     const appId = 'appId';
-    const appUrl = `${baseUrl}/app/kibana#test`;
+    const appUrl = `${baseUrl}/app/iot#test`;
     const deletedId = 'IAMDELETED';
 
     it('should clear last url when last url contains link to deleted saved object', function () {
@@ -113,31 +113,31 @@ describe('chrome nav apis', function () {
       fakedLinks = [
         {
           id: 'kibana:discover',
-          baseUrl: `${baseUrl}/app/kibana#discover`,
-          subUrlBase: '/app/kibana#discover'
+          baseUrl: `${baseUrl}/app/iot#discover`,
+          subUrlBase: '/app/iot#discover'
         },
         {
           id: 'kibana:visualize',
-          baseUrl: `${baseUrl}/app/kibana#visualize`,
-          subUrlBase: '/app/kibana#visualize'
+          baseUrl: `${baseUrl}/app/iot#visualize`,
+          subUrlBase: '/app/iot#visualize'
         },
         {
           id: 'kibana:dashboard',
-          baseUrl: `${baseUrl}/app/kibana#dashboards`,
-          subUrlBase: '/app/kibana#dashboard'
+          baseUrl: `${baseUrl}/app/iot#dashboards`,
+          subUrlBase: '/app/iot#dashboard'
         },
       ];
 
       const { internals } = init({ appUrlStore });
-      internals.trackPossibleSubUrl(`${baseUrl}/app/kibana#dashboard?_g=globalstate`);
+      internals.trackPossibleSubUrl(`${baseUrl}/app/iot#dashboard?_g=globalstate`);
 
-      expect(fakedLinks[0].url).to.be(`${baseUrl}/app/kibana#discover?_g=globalstate`);
+      expect(fakedLinks[0].url).to.be(`${baseUrl}/app/iot#discover?_g=globalstate`);
       expect(fakedLinks[0].active).to.be(false);
 
-      expect(fakedLinks[1].url).to.be(`${baseUrl}/app/kibana#visualize?_g=globalstate`);
+      expect(fakedLinks[1].url).to.be(`${baseUrl}/app/iot#visualize?_g=globalstate`);
       expect(fakedLinks[1].active).to.be(false);
 
-      expect(fakedLinks[2].url).to.be(`${baseUrl}/app/kibana#dashboard?_g=globalstate`);
+      expect(fakedLinks[2].url).to.be(`${baseUrl}/app/iot#dashboard?_g=globalstate`);
       expect(fakedLinks[2].active).to.be(true);
     });
   });
@@ -147,16 +147,16 @@ describe('chrome nav apis', function () {
       const appUrlStore = new StubBrowserStorage();
       fakedLinks = [{
         id: 'kibana:visualize',
-        baseUrl: `${baseUrl}/app/kibana#visualize`,
-        url: `${baseUrl}/app/kibana#visualize`,
-        subUrlBase: '/app/kibana#visualize',
+        baseUrl: `${baseUrl}/app/iot#visualize`,
+        url: `${baseUrl}/app/iot#visualize`,
+        subUrlBase: '/app/iot#visualize',
       }];
 
       const { chrome } = init({ appUrlStore });
-      const kibanaParsedUrl = absoluteToParsedUrl(`${baseUrl}/xyz/app/kibana#visualize/1234?_g=globalstate`, '/xyz');
+      const kibanaParsedUrl = absoluteToParsedUrl(`${baseUrl}/xyz/app/iot#visualize/1234?_g=globalstate`, '/xyz');
       chrome.trackSubUrlForApp('kibana:visualize', kibanaParsedUrl);
       expect(
-        coreNavLinks.update.calledWith('kibana:visualize', { url: `${baseUrl}/xyz/app/kibana#visualize/1234?_g=globalstate` })
+        coreNavLinks.update.calledWith('kibana:visualize', { url: `${baseUrl}/xyz/app/iot#visualize/1234?_g=globalstate` })
       ).to.be(true);
     });
   });

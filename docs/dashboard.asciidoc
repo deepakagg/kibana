@@ -116,7 +116,7 @@ to view an embedded dashboard.
 share the live dashboard or a static snapshot of the current point in time.
 
 TIP: You can create a link to a dashboard by title by doing this: +
-`${domain}/${basepath?}/app/kibana#/dashboards?title=${yourdashboardtitle}`
+`${domain}/${basepath?}/app/iot#/dashboards?title=${yourdashboardtitle}`
 
 TIP: When sharing a link to a dashboard snapshot, use the *Short URL*. Snapshot
 URLs are long and can be problematic for Internet Explorer and other

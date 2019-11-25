@@ -56,7 +56,7 @@ export class SampleDataViewDataButton extends React.Component {
         datasetName: this.props.name,
       },
     });
-    const dashboardPath = chrome.addBasePath(`/app/kibana#/dashboard/${this.props.overviewDashboard}`);
+    const dashboardPath = chrome.addBasePath(`/app/iot#/dashboard/${this.props.overviewDashboard}`);
 
     if (this.props.appLinks.length === 0) {
       return (

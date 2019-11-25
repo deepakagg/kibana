@@ -38,7 +38,7 @@ export default function PageController() {
     const ROOT = chrome.getBasePath();
     const BRANDIMAGE = chrome.getInjected("basicauth.login.brandimage");
 
-    this.buttonHref = ROOT + '/app/kibana';
+    this.buttonHref = ROOT + '/app/iot';
 
     // Button styles, same as the basic auth login styles
     this.buttonstyle = chrome.getInjected("basicauth.login.buttonstyle");

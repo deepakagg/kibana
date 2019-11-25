@@ -65,42 +65,42 @@ describe('hashUrl', function () {
     });
 
     it('if just a path', () => {
-      const url = 'https://localhost:5601/app/kibana';
+      const url = 'https://localhost:5601/app/iot';
       expect(hashUrl(states, url)).to.be(url);
     });
 
     it('if just a path and query', () => {
-      const url = 'https://localhost:5601/app/kibana?foo=bar';
+      const url = 'https://localhost:5601/app/iot?foo=bar';
       expect(hashUrl(states, url)).to.be(url);
     });
 
     it('if empty hash with query', () => {
-      const url = 'https://localhost:5601/app/kibana?foo=bar#';
+      const url = 'https://localhost:5601/app/iot?foo=bar#';
       expect(hashUrl(states, url)).to.be(url);
     });
 
     it('if query parameter matches and there is no hash', () => {
-      const url = 'https://localhost:5601/app/kibana?testParam=(yes:!t)';
+      const url = 'https://localhost:5601/app/iot?testParam=(yes:!t)';
       expect(hashUrl(states, url)).to.be(url);
     });
 
     it(`if query parameter matches and it's before the hash`, () => {
-      const url = 'https://localhost:5601/app/kibana?testParam=(yes:!t)';
+      const url = 'https://localhost:5601/app/iot?testParam=(yes:!t)';
       expect(hashUrl(states, url)).to.be(url);
     });
 
     it('if empty hash without query', () => {
-      const url = 'https://localhost:5601/app/kibana#';
+      const url = 'https://localhost:5601/app/iot#';
       expect(hashUrl(states, url)).to.be(url);
     });
 
     it('if hash is just a path', () => {
-      const url = 'https://localhost:5601/app/kibana#/discover';
+      const url = 'https://localhost:5601/app/iot#/discover';
       expect(hashUrl(states, url)).to.be(url);
     });
 
     it('if hash does not have matching query string vals', () => {
-      const url = 'https://localhost:5601/app/kibana#/discover?foo=bar';
+      const url = 'https://localhost:5601/app/iot#/discover?foo=bar';
       expect(hashUrl(states, url)).to.be(url);
     });
   });
@@ -115,7 +115,7 @@ describe('hashUrl', function () {
 
     it('if using a single State', () => {
       const stateParamKey = 'testParam';
-      const url = `https://localhost:5601/app/kibana#/discover?foo=bar&${stateParamKey}=(yes:!t)`;
+      const url = `https://localhost:5601/app/iot#/discover?foo=bar&${stateParamKey}=(yes:!t)`;
       const mockHashedItemStore = {
         getItem: () => null,
         setItem: sinon.stub().returns(true)
@@ -135,7 +135,7 @@ describe('hashUrl', function () {
     it('if using multiple States', () => {
       const stateParamKey1 = 'testParam1';
       const stateParamKey2 = 'testParam2';
-      const url = `https://localhost:5601/app/kibana#/discover?foo=bar&${stateParamKey1}=(yes:!t)&${stateParamKey2}=(yes:!f)`;
+      const url = `https://localhost:5601/app/iot#/discover?foo=bar&${stateParamKey1}=(yes:!t)&${stateParamKey2}=(yes:!f)`;
       const mockHashedItemStore = {
         getItem: () => null,
         setItem: sinon.stub().returns(true)

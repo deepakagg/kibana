@@ -61,44 +61,44 @@ export default async function ({ readConfigFile }) {
 
     apps: {
       kibana: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
       },
       status_page: {
         pathname: '/status',
       },
       discover: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/discover',
       },
       context: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/context',
       },
       visualize: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/visualize',
       },
       dashboard: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/dashboards',
       },
       settings: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/management',
       },
       timelion: {
         pathname: '/app/timelion',
       },
       console: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/dev_tools/console',
       },
       account: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/account',
       },
       home: {
-        pathname: '/app/kibana',
+        pathname: '/app/iot',
         hash: '/home',
       },
     },

@@ -55,7 +55,7 @@ module.exports = function (pluginRoot, server, kbnServer, APP_ROOT, API_ROOT) {
 
         async handler(request, h) {
             if (request.auth.isAuthenticated) {
-                return h.redirect(basePath + '/app/kibana');
+                return h.redirect(basePath + '/app/iot');
             }
 
             let nextUrl = null;
@@ -107,7 +107,7 @@ module.exports = function (pluginRoot, server, kbnServer, APP_ROOT, API_ROOT) {
                     return h.redirect(nextUrl);
                 }
 
-                return h.redirect(basePath + '/app/kibana');
+                return h.redirect(basePath + '/app/iot');
 
             } catch (error) {
                 if (error instanceof AuthenticationError) {
@@ -140,7 +140,7 @@ module.exports = function (pluginRoot, server, kbnServer, APP_ROOT, API_ROOT) {
                     authHeaderValue: credentials.authorization
                 });
 
-                return h.redirect(basePath + '/app/kibana');
+                return h.redirect(basePath + '/app/iot');
 
             } catch (error) {
                 if (error instanceof AuthenticationError) {

@@ -46,7 +46,7 @@ FeatureCatalogueRegistryProvider.register(() => {
       defaultMessage: 'Import, export, and manage your saved searches, visualizations, and dashboards.',
     }),
     icon: 'savedObjectsApp',
-    path: '/app/kibana#/management/kibana/objects',
+    path: '/app/iot#/management/kibana/objects',
     showOnHomePage: true,
     category: FeatureCatalogueCategory.ADMIN
   };

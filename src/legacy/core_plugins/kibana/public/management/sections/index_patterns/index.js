@@ -180,7 +180,7 @@ FeatureCatalogueRegistryProvider.register(() => {
     description: i18n.translate('kbn.management.indexPatternLabel',
       { defaultMessage: 'Manage the index patterns that help retrieve your data from Elasticsearch.' }),
     icon: 'indexPatternApp',
-    path: '/app/kibana#/management/kibana/index_patterns',
+    path: '/app/iot#/management/kibana/index_patterns',
     showOnHomePage: true,
     category: FeatureCatalogueCategory.ADMIN
   };

@@ -138,7 +138,7 @@ module.exports = async function (pluginRoot, server, kbnServer, APP_ROOT, API_RO
                         return h.redirect(nextUrl);
                     }
 
-                    return h.redirect(basePath + '/app/kibana');
+                    return h.redirect(basePath + '/app/iot');
                 }
                 catch (error) {
                     if (error instanceof AuthenticationError) {
@@ -187,7 +187,7 @@ module.exports = async function (pluginRoot, server, kbnServer, APP_ROOT, API_RO
             const cookieName = config.get('opendistro_security.cookie.name');
             // Get the session credentials and remove "Bearer " from the value
             const token = request.state[cookieName].credentials.authHeaderValue.split(' ')[1];
-            let requestQueryParameters = `?post_logout_redirect_uri=${baseRedirectUrl}${basePath}/app/kibana`;
+            let requestQueryParameters = `?post_logout_redirect_uri=${baseRedirectUrl}${basePath}/app/iot`;
 
             // If we don't have an "end_session_endpoint" in the .well-known list,
             // we may have a custom logout_url defined in the config.

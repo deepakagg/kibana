@@ -303,7 +303,7 @@ class TutorialUi extends React.Component {
       });
       if (overviewDashboard) {
         label = overviewDashboard.linkLabel;
-        url = this.props.addBasePath(`/app/kibana#/dashboard/${overviewDashboard.id}`);
+        url = this.props.addBasePath(`/app/iot#/dashboard/${overviewDashboard.id}`);
       }
     }
 

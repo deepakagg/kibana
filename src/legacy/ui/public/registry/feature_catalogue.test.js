@@ -40,7 +40,7 @@ describe('FeatureCatalogueRegistryProvider', () => {
         title: 'foo',
         description: 'this is foo',
         icon: 'savedObjectsApp',
-        path: '/app/kibana#/management/kibana/objects',
+        path: '/app/iot#/management/kibana/objects',
         showOnHomePage: true,
         category: FeatureCatalogueCategory.ADMIN,
       };
@@ -52,7 +52,7 @@ describe('FeatureCatalogueRegistryProvider', () => {
         title: 'bar',
         description: 'this is bar',
         icon: 'savedObjectsApp',
-        path: '/app/kibana#/management/kibana/objects',
+        path: '/app/iot#/management/kibana/objects',
         showOnHomePage: true,
         category: FeatureCatalogueCategory.ADMIN,
       };
@@ -65,7 +65,7 @@ describe('FeatureCatalogueRegistryProvider', () => {
         title: 'secret',
         description: 'this is a secret',
         icon: 'savedObjectsApp',
-        path: '/app/kibana#/management/kibana/objects',
+        path: '/app/iot#/management/kibana/objects',
         showOnHomePage: true,
         category: FeatureCatalogueCategory.ADMIN,
       };
@@ -83,7 +83,7 @@ describe('FeatureCatalogueRegistryProvider', () => {
       title: 'foo',
       description: 'this is foo',
       icon: 'savedObjectsApp',
-      path: '/app/kibana#/management/kibana/objects',
+      path: '/app/iot#/management/kibana/objects',
       showOnHomePage: true,
       category: FeatureCatalogueCategory.ADMIN,
     }, {
@@ -91,7 +91,7 @@ describe('FeatureCatalogueRegistryProvider', () => {
       title: 'secret',
       description: 'this is a secret',
       icon: 'savedObjectsApp',
-      path: '/app/kibana#/management/kibana/objects',
+      path: '/app/iot#/management/kibana/objects',
       showOnHomePage: true,
       category: FeatureCatalogueCategory.ADMIN,
     }]);
